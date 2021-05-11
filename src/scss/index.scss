@@ -1,0 +1,21 @@
+/*=============================================
+=                  ITCSS                     =
+=============================================*/
+/* Settings */
+@import "./01-Settings/settings.scss";
+/* Tools */
+@import "./02-Tools/tools.scss";
+/* Generic */
+@import "./03-Generic/generic.scss";
+/* Tags */
+@import "./04-Tags/tags.scss";
+/* Objects */
+@import "./05-Objects/objects.scss";
+/* Layouts */
+@import "./06-Layouts/layouts.scss";
+/* Components */
+@import "./07-Components/components.scss";
+/* Scopes */
+@import "./08-Scopes/scopes.scss";
+/* Utilities */
+@import "./09-Utilities/utilities.scss";

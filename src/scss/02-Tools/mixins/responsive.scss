@@ -1,0 +1,61 @@
+/*=============================================
+=            Media mixin            =
+=============================================*/
+
+@mixin media-up($mq) {
+  @media (min-width: $mq) {
+    @content;
+  }
+}
+@mixin media-down($mq) {
+  @media (max-width: $mq) {
+    @content;
+  }
+}
+@mixin media-between($mq-min, $mq-max) {
+  @media (min-width: $mq-min) and (max-width: $mq-max) {
+    @content;
+  }
+}
+
+/* SM */
+@mixin only-sm() {
+  @include media-to-down($breakpoint-sm) {
+    @content;
+  }
+} // * FROM 0px to 600px
+@mixin sm() {
+  @include media-to-up($breakpoint-sm) {
+    @content;
+  }
+}// * FROM 600px to infinity
+/* MD */
+@mixin only-md() {
+  @include media-between($breakpoint-md, $breakpoint-xl) {
+    @content;
+  }
+}// * FROM 900px to 1200px
+@mixin md() {
+  @include media-to-up($breakpoint-md) {
+    @content;
+  }
+}// * FROM 900px to infinity
+/* XL */
+@mixin only-xl() {
+  @include media-to-down($breakpoint-xl, $breakpoint-xxl) {
+    @content;
+  }
+}// * FROM 1200px to 1800px
+@mixin xl() {
+  @include media-to-up($breakpoint-xl) {
+    @content;
+  }
+}// * FROM 1200px to infinity
+/* XXL */
+@mixin xxl() {
+  @include media-to-up($breakpoint-xxl) {
+    @content;
+  }
+}// * FROM 1800px to infinity
+
+/*=====  End of Media mixin  ======*/
