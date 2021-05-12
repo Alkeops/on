@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useWindowScroll } from "@hooks";
 import { HamburguerButton } from "@atoms";
 import { NavBar } from "@molecules";
+import { Container } from "@templates";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -14,11 +15,13 @@ const Header = () => {
   });
   return (
     <header className={classForComponent}>
-      <Link href="/">
-        <a style={{ fontSize: 20, marginRight: 18, width: 100 }}>Logo</a>
-      </Link>
-      <HamburguerButton open={open} setOpen={setOpen} />
-      <NavBar open={open} />
+      <Container className={`${prefix}__container`}>
+        <Link href="/">
+          <a style={{ fontSize: 20, marginRight: 18, width: 100 }}>Logo</a>
+        </Link>
+        <HamburguerButton open={open} setOpen={setOpen} />
+        <NavBar open={open} />
+      </Container>
     </header>
   );
 };

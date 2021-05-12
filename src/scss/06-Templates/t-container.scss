@@ -1,11 +1,16 @@
 .t-container {
+  height: 100%;
   margin: 0 auto;
   max-width: $screen-desktop-xs;
-  width: 100%;
+  width: 95%;
+  @include md(){
+    width: 80%;
+  }
   &--full {
     min-height: 100vh;
   }
   &--wide {
     max-width: 100%;
+    width: 100%;
   }
 }

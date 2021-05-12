@@ -11,7 +11,7 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
       </Head>
       <Header />
       <main className="t-main">
-        <Container full wide>
+        <Container full>
           {children}
         </Container>
       </main>

@@ -4,6 +4,7 @@ type ContainerType = {
   children: ReactNode;
   full?: boolean;
   wide?: boolean;
+  className?: string;
 };
 
 export type { ContainerType };

@@ -2,7 +2,7 @@ import { UserLayout, Container } from "@templates";
 export default function Home() {
   return (
     <UserLayout>
-      <Container>
+      <Container wide>
         sint modi quisquam, quod sunt accusantium maiores blanditiis
         reprehenderit hic! Distinctio amet veniam quam numquam reprehenderit.
         Quis ratione aspernatur blanditiis laboriosam culpa magni nulla, maiores

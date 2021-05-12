@@ -1,9 +1,5 @@
 .o-header {
-  align-items: center;
-  display: flex;
   height: 60px;
-  justify-content: space-between;
-  padding: 0 15px;
   position: fixed;
   top: 0;
   transition: 0.3s;
@@ -12,11 +8,14 @@
   @include md() {
     height: 75px;
     justify-content: flex-start;
-    padding: 0 60px;
   }
   @include xl() {
     height: 100px;
-    padding: 0 14%;
+  }
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
   &.has-color {
     background: yellow; //TODO color header
