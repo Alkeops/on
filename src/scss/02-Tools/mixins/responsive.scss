@@ -20,12 +20,12 @@
 
 /* SM */
 @mixin only-sm() {
-  @include media-to-down($breakpoint-sm) {
+  @include media-down($breakpoint-sm) {
     @content;
   }
 } // * FROM 0px to 600px
 @mixin sm() {
-  @include media-to-up($breakpoint-sm) {
+  @include media-up($breakpoint-sm) {
     @content;
   }
 }// * FROM 600px to infinity
@@ -36,24 +36,24 @@
   }
 }// * FROM 900px to 1200px
 @mixin md() {
-  @include media-to-up($breakpoint-md) {
+  @include media-up($breakpoint-md) {
     @content;
   }
 }// * FROM 900px to infinity
 /* XL */
 @mixin only-xl() {
-  @include media-to-down($breakpoint-xl, $breakpoint-xxl) {
+  @include media-down($breakpoint-xl, $breakpoint-xxl) {
     @content;
   }
 }// * FROM 1200px to 1800px
 @mixin xl() {
-  @include media-to-up($breakpoint-xl) {
+  @include media-up($breakpoint-xl) {
     @content;
   }
 }// * FROM 1200px to infinity
 /* XXL */
 @mixin xxl() {
-  @include media-to-up($breakpoint-xxl) {
+  @include media-up($breakpoint-xxl) {
     @content;
   }
 }// * FROM 1800px to infinity

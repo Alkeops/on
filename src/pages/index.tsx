@@ -1,9 +1,18 @@
-import { Button, Container } from "@common";
-
+import { Container } from "@templates";
+import { Button } from "@atoms";
+import { useState } from "react";
+import { HamburguerButton, NavItem } from "@atoms";
+import { NavBar } from "@molecules";
+import { Header } from "@organisms";
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <Container full>
+        <HamburguerButton open={open} setOpen={setOpen} />
+        <NavItem href="/" content="Button" />
+        <NavBar open={open} />
+        <Header />
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa est error
         quibusdam saepe, doloribus quo. Consequatur laboriosam officia autem
         cumque expedita quibusdam dolore. Error quis iusto nobis optio

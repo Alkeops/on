@@ -1,21 +1,42 @@
 /*=============================================
-=                  ITCSS                     =
+=                  ATOMIC BEMIT               =
 =============================================*/
-/* Settings */
+
+/**
+ *
+ * Atomic Bemit is the merger between Atomic Design, BEM & ITCSS.
+ *
+ * BEM  =  Block, Element, Modifier is a naming convention for classes in HTML, its goal is to help developers know the relationship between the HTML and CSS in a given project
+ * EXAMPLE:
+ * .btn <= This is a block
+ * .btn__price <= This is an element
+ * .btn--error <= This is a modifier 
+ *
+ * ITCSS = Inverted Triangle CSS helps to organize the CSS files of our projects in such a way that you can better deal with CSS specifics like global namespace, cascade nad selectors specifity.
+ * 
+ * Atomic Design = Atomic Design is a methodology to craft interfaces. This methodology separates the components into atoms, molecules, organisms, templates, and pages. 
+ */
+
+
+/* Settings -ITCSS*/
 @import "./01-Settings/settings.scss";
-/* Tools */
+/* Tools -ITCSS*/
 @import "./02-Tools/tools.scss";
-/* Generic */
+/* Generic -ITCSS*/
 @import "./03-Generic/generic.scss";
-/* Tags */
+/* Tags -ITCSS*/
 @import "./04-Tags/tags.scss";
-/* Objects */
-@import "./05-Objects/objects.scss";
-/* Layouts */
-@import "./06-Layouts/layouts.scss";
-/* Components */
-@import "./07-Components/components.scss";
-/* Scopes */
-@import "./08-Scopes/scopes.scss";
-/* Utilities */
-@import "./09-Utilities/utilities.scss";
+/* Pages -Atomic design*/
+@import "./05-Pages/pages.scss";
+/* Templates -Atomic design*/
+@import "./06-Templates/templates.scss";
+/* Organism -Atomic design*/
+@import "./07-Organism/organism.scss";
+/* Molecules -Atomic design*/
+@import "./08-Molecules/molecules.scss";
+/* Atoms -Atomic design*/
+@import "./09-Atoms/atoms.scss";
+/* Scopes -ITCSS*/
+@import "./10-Scopes/scopes.scss";
+/* Utilities -ITCSS*/
+@import "./11-Utilities/utilities.scss";

@@ -1,0 +1,49 @@
+.a-nav-item {
+  color: $color-gray-dark;
+  font-size: 1.9rem;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+  z-index: 1; //TODO crear mixin para z-index
+  &.is-active {
+    color: red;
+  }
+  @include md() {
+    font-size: 1.6rem;
+  }
+  &:hover {
+    color: $color-white;
+    z-index: 1;
+    &:before {
+      background: $color-sexy-purple;
+      transform: scaleX(1) skew(-10deg);
+    }
+    &:after {
+      background: $color-sexy-purple;
+      transform: scaleX(1) skew(-10deg);
+    }
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    transition: 0.4s;
+  }
+  &:before {
+    bottom: 48%;
+    left: -6px;
+    right: -14px;
+    top: -10px;
+    transform-origin: left;
+    z-index: -1;
+  }
+  &:after {
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    top: 50%;
+    transform-origin: right;
+    z-index: -1;
+  }
+}

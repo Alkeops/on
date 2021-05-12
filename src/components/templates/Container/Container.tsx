@@ -1,9 +1,9 @@
 import React from "react";
 import classNames from "classnames";
-import { ContainerType } from "@ts";
+import { ContainerType } from "./ContainerType";
 
 const Container = ({ children, full }: ContainerType) => {
-  const prefix: string = "o-container";
+  const prefix: string = "t-container";
   const classForComponent: string = classNames(`${prefix}`, {
     [`${prefix}--full`]: full,
   });

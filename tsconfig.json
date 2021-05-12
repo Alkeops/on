@@ -15,15 +15,14 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
-      "@styles/*": ["styles/*"],
-      "@common": ["components/common"],
-      "@components": ["components"],
-      "@ts": ["ts"],
+      "@atoms": ["components/atoms"],
+      "@molecules": ["components/molecules"],
+      "@organisms": ["components/organisms"],
+      "@templates": ["components/templates"],
       "@utils": ["utils"],
-      "@hooks": ["hooks"],
-      "@layouts": ["components/layouts"],
+      "@hooks": ["hooks"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/organisms/Header"],
   "exclude": ["node_modules"]
 }
