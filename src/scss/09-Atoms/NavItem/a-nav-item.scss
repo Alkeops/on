@@ -31,18 +31,18 @@
     transition: 0.4s;
   }
   &:before {
-    bottom: 48%;
+    bottom: 0%;
     left: -6px;
-    right: -14px;
-    top: -10px;
+    right: -12px;
+    top: -9px;
     transform-origin: left;
     z-index: -1;
   }
   &:after {
     bottom: -10px;
-    left: -10px;
+    left: -8px;
     right: -10px;
-    top: 50%;
+    top: 0%;
     transform-origin: right;
     z-index: -1;
   }

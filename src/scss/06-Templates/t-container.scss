@@ -3,6 +3,9 @@
   max-width: $screen-desktop-xs;
   width: 100%;
   &--full {
-    height: 100vh;
+    min-height: 100vh;
+  }
+  &--wide {
+    max-width: 100%;
   }
 }
