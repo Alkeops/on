@@ -20,4 +20,10 @@
   &.has-color {
     background: white; //TODO color header
   }
+  &__image{
+    transform: translate(-20px, 8%);
+    @include xl(){
+      width: 180px;
+    }
+  }
 }

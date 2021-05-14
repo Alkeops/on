@@ -10,13 +10,13 @@
   &__app {
     background: white;
     box-shadow: 0px 4px 16px black;
-    height: 280px;
+    height: 270px;
     margin-bottom: 55px;
     position: relative;
     width: 100%;
     &-man,
     &-woman {
-      font-size: 10.5vw;
+      font-size: 10.8vw;
       position: absolute;
       top: 100%;
       transform: translate(-50%, -50%);
@@ -44,7 +44,7 @@
   }
   &__info {
     &-button {
-      margin-top: 15px;
+      margin-top: 20px;
       width: 100%;
       @include sm() {
         width: initial;
@@ -52,7 +52,7 @@
       }
     }
     @include xl() {
-     padding-left: 12vw;
+     padding-left: 10vw;
       max-width: 40%;
       order: 1;
     }

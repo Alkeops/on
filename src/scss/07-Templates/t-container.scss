@@ -2,9 +2,9 @@
   height: 100%;
   margin: 0 auto;
   max-width: $screen-desktop-md;
-  width: 95%;
+  width: 90%;
   @include sm() {
-    width: 75%;
+    width: 80%;
   }
   &--full {
     min-height: calc(100vh - $header-height-xs);
