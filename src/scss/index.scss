@@ -17,7 +17,6 @@
  * Atomic Design = Atomic Design is a methodology to craft interfaces. This methodology separates the components into atoms, molecules, organisms, templates, and pages. 
  */
 
-
 /* Settings -ITCSS*/
 @import "./01-Settings/settings.scss";
 /* Tools -ITCSS*/
@@ -26,17 +25,19 @@
 @import "./03-Generic/generic.scss";
 /* Tags -ITCSS*/
 @import "./04-Tags/tags.scss";
+/* Keyframes */
+@import "./05-Keyframes/keyframes.scss";
 /* Pages -Atomic design*/
-@import "./05-Pages/pages.scss";
+@import "./06-Pages/pages.scss";
 /* Templates -Atomic design*/
-@import "./06-Templates/templates.scss";
+@import "./07-Templates/templates.scss";
 /* Organism -Atomic design*/
-@import "./07-Organism/organism.scss";
+@import "./08-Organism/organism.scss";
 /* Molecules -Atomic design*/
-@import "./08-Molecules/molecules.scss";
+@import "./09-Molecules/molecules.scss";
 /* Atoms -Atomic design*/
-@import "./09-Atoms/atoms.scss";
+@import "./10-Atoms/atoms.scss";
 /* Scopes -ITCSS*/
-@import "./10-Scopes/scopes.scss";
+@import "./11-Scopes/scopes.scss";
 /* Utilities -ITCSS*/
-@import "./11-Utilities/utilities.scss";
+@import "./12-Utilities/utilities.scss";

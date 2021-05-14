@@ -1,9 +1,0 @@
-.t-main {
-  padding-top: 70px;
-  @include sm() {
-    padding-top: 80px;
-  }
-  @include md() {
-    padding-top: 105px;
-  }
-}

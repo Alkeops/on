@@ -3,7 +3,7 @@ import { MainSection } from "@organisms";
 export default function Home() {
   return (
     <UserLayout>
-      <Container full wide>
+      <Container full isXlWide>
         <MainSection />
       </Container>
     </UserLayout>

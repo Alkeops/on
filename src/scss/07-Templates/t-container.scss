@@ -1,22 +1,28 @@
 .t-container {
   height: 100%;
   margin: 0 auto;
-  max-width: $screen-desktop-xs;
+  max-width: $screen-desktop-md;
   width: 95%;
-  @include sm(){
+  @include sm() {
     width: 75%;
   }
   &--full {
     min-height: calc(100vh - $header-height-xs);
-    @include sm(){
+    @include sm() {
       min-height: calc(100vh - $header-height-md);
     }
-    @include md(){
+    @include md() {
       min-height: calc(100vh - $header-height-xl);
     }
   }
   &--wide {
     max-width: 100%;
     width: 100%;
+    &-xl{
+      @include xl(){
+        max-width: 100%;
+        width: 100%;
+      }
+    }
   }
 }

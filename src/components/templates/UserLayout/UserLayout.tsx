@@ -10,11 +10,7 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Header />
-      <main className="t-main">
-        <Container full>
-          {children}
-        </Container>
-      </main>
+      <main className="t-main">{children}</main>
     </>
   );
 };

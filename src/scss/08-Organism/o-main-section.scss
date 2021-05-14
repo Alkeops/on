@@ -1,0 +1,60 @@
+.o-main-section {
+  position: relative;
+  padding-bottom: 250px;
+  margin-bottom: 750px;
+  @include xl() {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__app {
+    background: white;
+    box-shadow: 0px 4px 16px black;
+    height: 280px;
+    margin-bottom: 55px;
+    position: relative;
+    width: 100%;
+    &-man,
+    &-woman {
+      font-size: 10.5vw;
+      position: absolute;
+      top: 100%;
+      transform: translate(-50%, -50%);
+    }
+    &-man {
+     transform: translate(80%, -50%);
+      right: 100%;
+    }
+    &-woman {
+      left: 100%;
+    }
+    @include sm() {
+      height: 400px;
+      margin-bottom: 110px;
+    }
+    @include xl() {
+      height: 600px;
+      max-width: 55%;
+      order: 2;
+    }
+    & > div{
+      height: 500px;
+      width: 100%;
+    }
+  }
+  &__info {
+    &-button {
+      margin-top: 15px;
+      width: 100%;
+      @include sm() {
+        width: initial;
+        margin-top: 40px;
+      }
+    }
+    @include xl() {
+     padding-left: 12vw;
+      max-width: 40%;
+      order: 1;
+    }
+  }
+}

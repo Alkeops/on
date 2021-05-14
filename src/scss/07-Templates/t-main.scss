@@ -1,0 +1,11 @@
+.t-main {
+  overflow: hidden;
+  padding-top: 80px;
+  min-height: 100vh;
+  @include sm() {
+    padding-top: 95px;
+  }
+  @include md() {
+    padding-top:  180px;
+  }
+}

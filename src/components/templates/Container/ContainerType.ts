@@ -5,6 +5,7 @@ type ContainerType = {
   full?: boolean;
   wide?: boolean;
   className?: string;
+  isXlWide?: boolean;
 };
 
 export type { ContainerType };

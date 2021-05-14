@@ -1,0 +1,51 @@
+.m-circle {
+  /* top: 10vh;
+  right: 26vw; */
+  top: -10vw;
+  left: 25%;
+  position: absolute;
+  @include sm(){
+    top: -3vw;
+    left: 80%;
+  }
+  @include xl(){
+    top: -4.5vw;
+    left: 60%;
+  }
+  &__out {
+    animation: spin 10s infinite linear reverse;
+    border-radius: 50%;
+    border: 5px solid #2a3873;
+    height: 100vw;
+    position: absolute;
+    width: 95vw;
+    max-width: 370px;
+    max-height: 380px;
+    @include sm(){
+      max-width: 600px;
+      max-height: 615px;
+    }
+    @include xl(){
+      max-width: 1000px;
+      max-height: 1030px;
+    }
+  }
+  &__in {
+    animation: spin 2s infinite linear;
+    background: linear-gradient(#54095b, #2a3873);
+    border-radius: 50%;
+    height: 95vw;
+    position: absolute;
+    width: 95vw;
+    max-width: 380px;
+    max-height: 380px;
+    @include sm(){
+      max-width: 600px;
+      max-height: 600px;
+    }
+    @include xl(){
+      max-width: 1000px;
+      max-height: 1000px;
+    }
+  }
+}
