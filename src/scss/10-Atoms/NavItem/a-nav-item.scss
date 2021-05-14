@@ -6,12 +6,20 @@
   transition: 0.3s;
   z-index: 1; //TODO crear mixin para z-index
   &.is-active {
-    color: red;
+    color: lighten($color-sexy-purple, 9);
+    font-weight: 800;
+    border-bottom: 5px solid lighten($color-sexy-purple, 9);
+    &:hover {
+      color: lighten($color-sexy-purple, 9);
+      border-bottom: 5px solid lighten($color-sexy-purple, 9);
+    }
   }
   @include xl() {
     font-size: 2.5rem;
   }
   &:hover {
-    color: $color-sexy-purple;
+    color: lighten($color-sexy-blue, 9);
+    font-weight: 800;
+    border-bottom: 5px solid lighten($color-sexy-blue, 9);
   }
 }

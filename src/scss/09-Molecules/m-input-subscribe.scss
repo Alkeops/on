@@ -1,0 +1,30 @@
+.m-input-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @include md() {
+    margin-left: 50px;
+    max-width: 50%;
+  }
+  &__input {
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    padding: 0 10px;
+    width: 62%;
+  }
+  &__button {
+    border-radius: 0 10px 10px 0 !important;
+    width: 38%;
+  }
+  &__p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 9px;
+    a {
+      color: $color-sexy-blue;
+      cursor: pointer;
+      display: inline;
+      text-decoration: underline;
+    }
+  }
+}

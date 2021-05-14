@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Head from "next/head";
-import { Header } from "@organisms";
+import { Header, Footer } from "@organisms";
 import { Container } from "@templates";
 const UserLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -11,6 +11,8 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
       </Head>
       <Header />
       <main className="t-main">{children}</main>
+      <div className="t-main__pre-footer"></div>
+      <Footer />
     </>
   );
 };

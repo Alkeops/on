@@ -1,0 +1,62 @@
+.o-footer {
+  background: $color-black;
+  bottom: 0;
+  color: $color-white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 50px 15px 30px;
+  &__input {
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 35px;
+    width: 100%;
+    @include md() {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    button {
+      font-size: 14px;
+      box-shadow: boxShadow(3, $color-sexy-purple);
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    &-p {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+  &__navegation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    padding-top: 20px;
+    @include md() {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &-links {
+      padding: 10px 0 45px;
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: 1fr;
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-white;
+        &:hover {
+          color: lighten($color-sexy-purple, 50);
+          font-weight: 600;
+          border: none;
+        }
+      }
+    }
+  }
+  &__copy {
+    margin-top: 15px;
+    text-align: center;
+  }
+}

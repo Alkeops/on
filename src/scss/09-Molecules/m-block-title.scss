@@ -1,0 +1,12 @@
+.m-block-title {
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+    @include xl(){
+      border-bottom: none;
+    }
+  }
+}

@@ -10,7 +10,7 @@ const Header = () => {
   const { color } = useWindowScroll();
   const prefix = "o-header";
   const classForComponent: string = classNames(`${prefix}`, {
-    "has-color": color,
+    "has-color": color || open,
   });
   return (
     <header className={classForComponent}>

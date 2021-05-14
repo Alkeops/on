@@ -1,11 +1,28 @@
 .t-main {
   overflow: hidden;
   padding-top: 80px;
-  min-height: 100vh;
+  padding-bottom: 20px;
   @include sm() {
     padding-top: 95px;
+    padding-bottom: 36px;
   }
   @include md() {
+    padding-bottom: 50px;
     padding-top:  180px;
+  }
+  @include xl(){
+    padding-bottom: 260px;
+  }
+  &__pre-footer{
+    border-radius: 2% 2% 0 0;
+    height: 25vw;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.178), $color-black);
+    @include sm(){
+      height: 20vw;
+    }
+    @include md(){
+      height: 10vw;
+    }
   }
 }
