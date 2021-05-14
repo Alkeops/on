@@ -1,16 +1,16 @@
 .o-header {
-  height: 60px;
+  height: $header-height-xs;
   position: fixed;
   top: 0;
   transition: 0.3s;
   width: 100%;
   z-index: 3;
-  @include md() {
-    height: 75px;
+  @include sm() {
+    height: $header-height-md;
     justify-content: flex-start;
   }
-  @include xl() {
-    height: 100px;
+  @include md() {
+    height: $header-height-xl;;
   }
   &__container {
     align-items: center;

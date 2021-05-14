@@ -4,14 +4,19 @@
 
 /* COLOR */
 $color-white: white;
+$color-black: black;
 $color-gray-dark: #343a40;
-$color-sexy-purple: #5b316e;
+$color-sexy-purple: #54095b;
+$color-sexy-blue: #2a3873;
 
 /* FONT */
 
-$font-primary: "Open Sans", Helvetica, sans-serif;
-$font-titles: "Poppins", sans-serif;
+$font-primary: "Lato", sans-serif;
 
+/*Header Height */
+$header-height-xs: 60px;
+$header-height-md: 75px;
+$header_height-xl: 100px;
 /* RESPONSIVE */
 
 /* Desktop */
@@ -37,6 +42,4 @@ $breakpoint-md: 900px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1800px;
 
-
 /*=====  End of Settings  ======*/
-

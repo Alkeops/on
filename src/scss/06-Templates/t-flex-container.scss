@@ -1,0 +1,14 @@
+.t-flex-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    &--column{
+        flex-direction: column;
+    }
+    &--justify-center{
+        justify-content: center;
+    }
+    &--align-start{
+        align-items: flex-start;
+    }
+}

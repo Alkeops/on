@@ -17,7 +17,7 @@ const Header = () => {
     <header className={classForComponent}>
       <Container className={`${prefix}__container`}>
         <Link href="/">
-          <a style={{ fontSize: 20, marginRight: 18, width: 100 }}>Logo</a>
+          <a style={{ fontSize: 30, marginRight: 18, width: 100 }}>Nubesk</a>
         </Link>
         <HamburguerButton open={open} setOpen={setOpen} />
         <NavBar open={open} />

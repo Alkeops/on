@@ -20,9 +20,15 @@
       "@organisms": ["components/organisms"],
       "@templates": ["components/templates"],
       "@utils": ["utils"],
-      "@hooks": ["hooks"]
+      "@hooks": ["hooks"],
+      "@assets/*": ["assets/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/organisms/Header"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/organisms/Header"
+  ],
   "exclude": ["node_modules"]
 }

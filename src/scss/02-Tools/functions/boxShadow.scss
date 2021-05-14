@@ -1,0 +1,7 @@
+@function boxShadow($depth, $color) {
+    $box-shadow: 1px 1px $color;
+  @for $i from 2 through $depth {
+    $box-shadow: #{$box-shadow}, #{$i}px #{$i}px 0 #{$color};
+  }
+  @return $box-shadow;
+}
