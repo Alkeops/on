@@ -20,7 +20,7 @@ const ProductSection = () => {
         <Circle className={`${prefix}__header-circle`} />
       </div></Container>
      
-      <div style={{width: "100%", height: "1500px", background: "red"}}> <div style={{width: "300px", height: 200, background: "yellow", position: "sticky", top: 20}}></div></div>
+      <div style={{width: "100%", height: "1500px", padding: 50, background: "red", position: "sticky", top: 90}}> <div style={{width: "300px", height: 200, background: "yellow", position: "sticky", top: 80}}></div></div>
     </section>
   );
 };
