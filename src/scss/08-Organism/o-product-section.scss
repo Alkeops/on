@@ -1,11 +1,14 @@
 .o-product-section {
   &__header {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
+    @include xl(){
+      padding-bottom: 60px;
+    }
     &-circle {
       &.m-circle {
         left: 95% !important;
-        @include xl(){
-            left: 85% !important;
+        @include xl() {
+          left: 85% !important;
         }
         &__in {
           max-width: 500px;
@@ -14,6 +17,101 @@
         &__out {
           max-width: 500px;
           max-height: 530px;
+        }
+      }
+    }
+  }
+  &__skills {
+    min-height: 100vh;
+    background: linear-gradient($color-sexy-purple, $color-sexy-blue);
+    width: 100%;
+    padding: 90px 0 1px;
+    @include sm(){padding: 120px 0 1px;}
+    &-point {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+      margin-bottom: 80px;
+      position: relative;
+      z-index: 1;
+      @include sm() {
+        grid-template-columns: 3fr 2fr;
+      }
+      @include md() {
+        grid-gap: 60px;
+        margin-bottom: 100px;
+      }
+
+    }
+  }
+  &__banner {
+    padding: 0px 0 50px;
+    background: $color-sexy-blue;
+    @include md(){
+      padding-bottom: 80px;
+    }
+    &-content {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      @include only-sm() {
+        button {
+          width: 100%;
+        }
+      }
+      @include sm() {
+        justify-content: center;
+        flex-direction: row;
+        h1 {
+          margin: 0 50px 0 0;
+        }
+      }
+    }
+  }
+  &__last-chance {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    svg {
+      font-size: 60px;
+      box-shadow: 6px 6px 16px $color-sexy-blue;
+      color: $color-white;
+      padding: 10px;
+      background: linear-gradient($color-sexy-purple, $color-sexy-blue);
+      min-width: 60px;
+      border-radius: 15px;
+      @include md(){
+        font-size: 90px;
+      }
+    }
+    &-points {
+      display: grid;
+      grid-template-columns: 1fr;
+      @include sm() {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    &-point {
+      align-items: center;
+      display: flex;
+      margin: 10px;
+      h2 {
+        width: 100%;
+        text-align: left;
+        margin-left: 50px;
+      }
+      @include sm() {
+        &:nth-child(2n) {
+          svg {
+            order: 2;
+          }
+          h2 {
+            margin-right: 50px;
+            order: 1;
+          }
         }
       }
     }

@@ -6,7 +6,10 @@
   position: relative;
   span{
     margin: 0 8px;
-    color: $color-sexy-purple;
+    background: linear-gradient(to left, lighten($color-sexy-purple, 18), lighten($color-sexy-blue, 15));
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
   }
   @include md() {
     font-size: 46px;
@@ -17,5 +20,8 @@
     font-size: 55px;
     line-height: 83px;
     margin-bottom: 50px;
+  }
+  &.is-white{
+    color: white;
   }
 }

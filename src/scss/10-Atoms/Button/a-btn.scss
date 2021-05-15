@@ -22,8 +22,9 @@
   }
   &:hover {
     background: $color-sexy-purple;
-    box-shadow: boxShadow(4, $color-sexy-purple);
+    box-shadow: boxShadow(4, darken($color-sexy-purple,9));
     color: white;
+    border-color: transparent;
   }
   &::selection {
     background: none;

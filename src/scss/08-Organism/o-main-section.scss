@@ -1,6 +1,10 @@
 .o-main-section {
   position: relative;
   padding-bottom: 0px;
+  min-height: 100vh;
+  @include xl() {
+    padding-bottom: 260px;
+  }
   @include xl() {
     align-items: center;
     display: flex;
