@@ -4,12 +4,13 @@
   padding-bottom: 20px;
   z-index: 2;
   background: white;
-  @media(min-height: 735px){
+  overflow: hidden;
+  @media (min-height: 735px) {
     margin-bottom: 720px;
-    @include sm(){
+    @include sm() {
       margin-bottom: 655px;
     }
-    @include md(){
+    @include md() {
       margin-bottom: 550px;
     }
   }
@@ -21,5 +22,4 @@
     padding-bottom: 50px;
     padding-top: 180px;
   }
-  
 }
