@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { UserLayout, Container } from "@templates";
+import { ProductSection } from "@organisms";
 
 const producto = () => {
-    return (
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum excepturi aliquam, tempora dignissimos consequatur amet, doloribus officiis expedita doloremque, totam repudiandae. Accusamus iusto iste quo quam perspiciatis architecto quia non rerum ut quas corrupti perferendis necessitatibus impedit esse vitae, aliquid, qui sapiente facere atque tenetur ad laborum nostrum neque similique! Voluptatum odit eveniet non. Ea quam nisi soluta voluptatibus fugit excepturi, minus voluptates ducimus alias illo beatae distinctio tenetur reprehenderit quis sequi natus tempora amet placeat perferendis assumenda libero asperiores enim doloribus ipsam! Rerum vitae, iure voluptatibus enim aliquid ipsum cupiditate soluta tempore laboriosam esse, nostrum adipisci doloremque, fugit quo repellendus. Facere nesciunt ut numquam expedita, voluptates beatae sed repellendus, sint doloremque nemo corrupti esse quos veniam eligendi tempore debitis. Accusantium soluta perspiciatis obcaecati. Inventore quasi mollitia omnis ullam, necessitatibus cum ad. Quam neque laboriosam ea repellendus ab possimus incidunt esse impedit animi, temporibus facilis in cumque delectus placeat eaque praesentium expedita reprehenderit sapiente hic, cupiditate doloribus consequuntur est! Modi id cum fuga excepturi in repudiandae accusantium velit, voluptates molestias debitis incidunt! Rerum fuga consequuntur in voluptate, aperiam eos amet dicta suscipit ipsum, dolorem veritatis vero. Praesentium laboriosam cum nemo animi dolore ipsum dicta, assumenda earum ipsa error mollitia temporibus voluptatibus obcaecati unde sapiente reiciendis totam perspiciatis optio facere distinctio dolores, voluptatem amet incidunt ipsam? Nihil commodi nostrum beatae, et, cum quidem explicabo neque cupiditate praesentium tempora sit repellat cumque at. Optio fugiat, assumenda, voluptate est doloremque nihil exercitationem aut neque culpa deleniti cum numquam? Blanditiis ipsam earum voluptatum doloribus minus. Iste eaque perspiciatis recusandae, laborum nihil fugiat ipsum ex ipsam ad culpa, consectetur quisquam ea optio? Dolorum molestias iure aliquam eum aspernatur dolorem nobis omnis, unde corporis ratione totam fugiat libero assumenda doloribus excepturi vitae temporibus at? Atque maiores nobis tempore suscipit eos commodi blanditiis ipsam? Voluptatum, excepturi et?
-        </div>
-    )
-}
+  return (
+    <UserLayout>
+        <ProductSection />
+    </UserLayout>
+  );
+};
 
-export default producto
+export default producto;

@@ -1,0 +1,21 @@
+.o-product-section {
+  &__header {
+      margin-bottom: 50px;
+    &-circle {
+      &.m-circle {
+        left: 95% !important;
+        @include xl(){
+            left: 85% !important;
+        }
+        &__in {
+          max-width: 500px;
+          max-height: 500px;
+        }
+        &__out {
+          max-width: 500px;
+          max-height: 530px;
+        }
+      }
+    }
+  }
+}
