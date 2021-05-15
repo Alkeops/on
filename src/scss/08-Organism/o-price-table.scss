@@ -1,0 +1,88 @@
+.o-price-table {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+  padding: 22px 22px 12px;
+  position: relative;
+  transition: 0.3s;
+  width: 320px;
+  &:after {
+    background: #00000044;
+    border-radius: 50%;
+    content: "";
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    top: 102%;
+    transition: 0.3s;
+    width: 310px;
+  }
+  &:hover {
+    transform: translateY(5px);
+    &:after {
+      background: #00000083;
+      height: 5px;
+      top: 101%;
+    }
+  }
+  &__title {
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__price {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    span {
+      font-size: 18px;
+    }
+  }
+  &__mensual {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -30px;
+  }
+  &__button {
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 45px;
+    width: 100%;
+  }
+  &__container {
+    background: white;
+    border-radius: 20px;
+    padding-bottom: 12px;
+    margin-bottom: -12px;
+    margin-left: -22px;
+    width: 320px;
+  }
+  &.is-starter {
+    background: white;
+    border: 2px solid $color-sexy-purple;
+    color: $color-sexy-purple;
+    .price-table__title {
+      color: $color-sexy-purple;
+      font-weight: lighter;
+    }
+  }
+  &.is-enterprise {
+    background: linear-gradient($color-sexy-purple 0%, $color-sexy-blue 100%);
+    box-shadow: 0 0 8px black;
+    color: $color-white;
+    .o-price-table__title {
+      font-weight: 500;
+    }
+    .o-price-table__button {
+      margin-top: 12px;
+      width: 85%;
+    }
+  }
+  button{
+      box-shadow: boxShadow(2, $color-sexy-purple);
+  }
+}

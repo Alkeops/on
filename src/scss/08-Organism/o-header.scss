@@ -4,7 +4,7 @@
   top: 0;
   transition: 0.3s;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
   @include sm() {
     height: $header-height-md;
     justify-content: flex-start;

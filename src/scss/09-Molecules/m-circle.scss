@@ -28,6 +28,7 @@
     @include xl(){
       max-width: 1000px;
       max-height: 1030px;
+      border: 14px solid #2a3873;
     }
   }
   &__in {

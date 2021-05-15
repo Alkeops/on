@@ -1,13 +1,16 @@
+import React from "react";
 import { PriceSection } from "@organisms";
 import { UserLayout, Container } from "@templates";
-import React from "react";
-
+import Wave from "@assets/illustrations/wave.svg";
 const precio = () => {
   return (
     <UserLayout>
-      <Container full>
-        <PriceSection />
-      </Container>
+      <div className="p-precios">
+        <Container full>
+          <PriceSection />
+        </Container>
+      </div>
+      <Wave className="p-precios__waves" />
     </UserLayout>
   );
 };

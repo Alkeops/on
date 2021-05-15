@@ -1,0 +1,17 @@
+.p-precios{
+    &__waves {
+        color: $color-sexy-purple;
+        width: 300%;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        @include sm(){
+          width: 100%;
+        }
+        &.waves__infinity {
+          opacity: 0.4;
+          bottom: 30px;
+          z-index: 0;
+        }
+      }
+}

@@ -11,7 +11,6 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
       </Head>
       <Header />
       <main className="t-main">{children}</main>
-      <div className="t-main__pre-footer"></div>
       <Footer />
     </>
   );
