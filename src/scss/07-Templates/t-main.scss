@@ -3,6 +3,17 @@
   overflow: hidden;
   padding-top: 80px;
   padding-bottom: 20px;
+  z-index: 2;
+  background: white;
+  @media(min-height: 735px){
+    margin-bottom: 720px;
+    @include sm(){
+      margin-bottom: 655px;
+    }
+    @include md(){
+      margin-bottom: 550px;
+    }
+  }
   @include sm() {
     padding-top: 95px;
     padding-bottom: 36px;

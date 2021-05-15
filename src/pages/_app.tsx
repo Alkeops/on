@@ -7,6 +7,7 @@ import "scss/index.scss";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
+      offset: -50,
       duration: 1200,
       delay: 100,
     });
