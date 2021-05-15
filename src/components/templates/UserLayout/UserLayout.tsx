@@ -1,16 +1,29 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import Head from "next/head";
 import { Header, Footer } from "@organisms";
-import { Container } from "@templates";
+import { Button } from "@atoms";
+import { Modal } from "@templates";
 const UserLayout = ({ children }: { children: ReactNode }) => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Head>
         <title>Nubesk</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Header />
-      <main className="t-main">{children}</main>
+      <Header onClick={() => setOpenModal(true)} isOpen={openModal} />
+     {openModal ? <Modal onClick={()=> setOpenModal(false)}>
+        {" "}
+        <h2>Contactanos</h2>
+        <label>Nombre</label>
+        <input></input>
+        <label>Correo</label>
+        <input></input>
+        <label>Telefono</label>
+        <input></input>
+        <Button content="Quiero que me contacten" />
+      </Modal> : null}
+      <main className="t-main" >{children}</main>
       <Footer />
     </>
   );

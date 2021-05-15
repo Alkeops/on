@@ -1,5 +1,6 @@
 import Container from "./Container/Container";
 import UserLayout from "./UserLayout/UserLayout";
 import FlexContainer from "./FlexContainer/FlexContainer";
+import Modal from "./Modal/Modal";
 
-export { Container, UserLayout, FlexContainer };
+export { Container, FlexContainer, Modal, UserLayout };

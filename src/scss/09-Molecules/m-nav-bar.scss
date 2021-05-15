@@ -14,6 +14,9 @@
   &.is-open {
     right: 0;
   }
+  @include sm(){
+    padding-right: 65px;
+  }
   @include md() {
     align-items: center;
     background: none;
@@ -31,6 +34,18 @@
     justify-content: space-between;
     margin-bottom: 30px;
     min-height: 190px;
+    button {
+      font-size: 2.2rem;
+      font-weight: 600;
+      &:hover {
+        color: lighten($color-sexy-blue, 9);
+        font-weight: 800;
+        border-bottom: 5px solid lighten($color-sexy-blue, 9);
+      }
+      @include xl() {
+        font-size: 2.5rem;
+      }
+    }
     @include md() {
       align-items: center;
       flex-direction: row;
@@ -41,7 +56,7 @@
       width: 65%;
       max-width: 420px;
     }
-    @include xl(){
+    @include xl() {
       margin-left: 80px;
       max-width: 500px;
     }

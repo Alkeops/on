@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
 import { useWindowScroll } from "@hooks";
 import { HamburguerButton } from "@atoms";
 import { NavBar } from "@molecules";
 import { Container } from "@templates";
-const Header = () => {
+const Header = ({
+  onClick,
+  isOpen,
+}: {
+  onClick: MouseEventHandler;
+  isOpen: boolean;
+}) => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (isOpen) setOpen(false);
+  }, [isOpen]);
   const { color } = useWindowScroll();
   const prefix = "o-header";
   const classForComponent: string = classNames(`${prefix}`, {
@@ -25,7 +34,7 @@ const Header = () => {
           </a>
         </Link>
         <HamburguerButton open={open} setOpen={setOpen} />
-        <NavBar open={open} />
+        <NavBar open={open} onClick={onClick} />
       </Container>
     </header>
   );

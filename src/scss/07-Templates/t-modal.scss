@@ -1,0 +1,49 @@
+.t-modal {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #2a387350;
+  z-index: 99; //TODO mixin zindex
+  &__content {
+    border-radius: 25px;
+    padding: 20px;
+    background: $color-white;
+    border: 3px solid $color-sexy-blue;
+    box-shadow: 0px 6px 16px $color-sexy-blue;
+    width: 95%;
+    max-width: 375px;
+    color: $color-black;
+    position: relative;
+    label{
+        margin-top: 20px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 10px;
+        display: block;
+    }
+    input{
+        border-radius: 15px;
+        height: 47px;
+        width: 100%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .a-btn{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+  }
+  &__close {
+    font-size: 25px;
+    right: 25px;
+    top: 25px;
+    font-weight: bolder;
+    position: absolute;
+  }
+}
