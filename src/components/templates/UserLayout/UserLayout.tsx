@@ -14,7 +14,7 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
       <Header onClick={() => setOpenModal(true)} isOpen={openModal} />
      {openModal ? <Modal onClick={()=> setOpenModal(false)}>
         {" "}
-        <h2>Contactanos</h2>
+        <h2>Te contactamos</h2>
         <label>Nombre</label>
         <input></input>
         <label>Correo</label>

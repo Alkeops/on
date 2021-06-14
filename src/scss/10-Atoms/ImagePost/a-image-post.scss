@@ -1,0 +1,18 @@
+.a-image-post {
+  cursor: pointer;
+  height: 53vw;
+  max-height: 500px;
+  width: 100%;
+  @include only-sm-md(){
+    height: 35vw;
+  }
+  @include md(){
+      height: 25vw;
+      max-height: 350px;
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

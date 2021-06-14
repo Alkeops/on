@@ -1,17 +1,25 @@
 import Button from "./Button/Button";
+import DatePost from "./DatePost/DatePost";
+import Excerpt from "./Excerpt/Excerpt";
 import HamburguerButton from "./HamburguerButton/HamburguerButton";
+import ImagePost from "./ImagePost/ImagePost";
 import NavItem from "./NavItem/NavItem";
-import Title from "./Title/Title";
-import Paragraph from "./Paragraph/Paragraph";
 import NubeskIcons from "./NubeskIcons/NubeskIcons";
+import Paragraph from "./Paragraph/Paragraph";
+import PostTitle from "./PostTitle/PostTitle";
 import ProductImage from "./ProductImage/ProductImage";
+import Title from "./Title/Title";
 
 export {
   Button,
+  DatePost,
+  Excerpt,
   HamburguerButton,
+  ImagePost,
   NavItem,
-  Paragraph,
-  Title,
   NubeskIcons,
+  Paragraph,
+  PostTitle,
   ProductImage,
+  Title,
 };

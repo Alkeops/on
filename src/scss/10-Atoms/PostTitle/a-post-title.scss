@@ -1,0 +1,10 @@
+.a-post-title{
+    cursor: pointer;
+   font-size: 30px;
+   &:hover{
+       color: $color-sexy-blue;
+   }
+   @include md(){
+       font-size: 38px;
+   }
+}

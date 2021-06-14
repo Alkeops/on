@@ -1,8 +1,8 @@
 import React from "react";
-import { Title } from "@atoms";
 import Group from "@assets/illustrations/group.svg";
-import { PriceTable } from "@organisms";
+import { Title } from "@atoms";
 import {Circle} from "@molecules";
+import { PriceTable } from "@organisms";
 const PriceSection = () => {
   const prefix: string = "o-price-section";
   return (

@@ -14,6 +14,18 @@
       border-bottom: 5px solid lighten($color-sexy-purple, 9);
     }
   }
+  &.is-post {
+    font-size: 1.7rem;
+    color: lighten($color-sexy-blue, 9);
+    transition: 0;
+    width: max-content;
+    &:hover {
+      border-bottom: 2px solid lighten($color-sexy-blue, 9);
+    }
+    @include md() {
+      font-size: 2rem;
+    }
+  }
   @include xl() {
     font-size: 2.5rem;
   }

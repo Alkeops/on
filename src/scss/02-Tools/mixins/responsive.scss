@@ -29,6 +29,11 @@
     @content;
   }
 }// * FROM 600px to infinity
+@mixin only-sm-md(){
+  @include media-between($breakpoint-sm, $breakpoint-md){
+    @content;
+  }
+}// * FROM 600px to 900px
 /* MD */
 @mixin only-md() {
   @include media-between($breakpoint-md, $breakpoint-xl) {

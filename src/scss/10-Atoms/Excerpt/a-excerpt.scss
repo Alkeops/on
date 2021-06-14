@@ -1,0 +1,12 @@
+.a-excerpt {
+  p {
+    cursor: default;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    @include md() {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
