@@ -9,6 +9,7 @@ import Paragraph from "./Paragraph/Paragraph";
 import PostTitle from "./PostTitle/PostTitle";
 import ProductImage from "./ProductImage/ProductImage";
 import Title from "./Title/Title";
+import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   PostTitle,
   ProductImage,
   Title,
+  SocialNetworks
 };

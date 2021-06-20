@@ -1,0 +1,45 @@
+.a-social {
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  width: 50px;
+  transition: 0.5s;
+  .icon {
+    font-size: 20px;
+  }
+  &:hover {
+      padding: 5px;
+    .icon {
+      font-size: 25px;
+      color: white;
+    }
+    &.Facebook {
+      background: #3b5998;
+    }
+    &.Twitter {
+      background: #00acee;
+    }
+    &.Linkedin {
+      background: #0e76a8;
+    }
+    &.Youtube {
+      background: #c4302b;
+    }
+    &.Instagram {
+      background: linear-gradient(
+        45deg,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+      );
+    }
+  }
+}

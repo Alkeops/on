@@ -54,11 +54,11 @@
       min-height: 100%;
       margin-left: 20px;
       width: 65%;
-      max-width: 420px;
+      max-width: 300px;
     }
     @include xl() {
       margin-left: 80px;
-      max-width: 500px;
+      max-width: 400px;
     }
   }
 }

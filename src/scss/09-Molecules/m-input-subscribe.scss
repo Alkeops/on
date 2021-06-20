@@ -21,7 +21,7 @@
     font-weight: lighter;
     margin-top: 9px;
     a {
-      color: $color-sexy-blue;
+      color: lighten($color-sexy-blue, 40);
       cursor: pointer;
       display: inline;
       text-decoration: underline;

@@ -19,7 +19,7 @@ const NavBar = ({
         <NavItem href="/producto" content="Producto" />
         <NavItem href="/precios" content="Precios" />
         <NavItem href="/blog" content="Blog" />
-        <button onClick={onClick}>Contacto</button>
+        {/* <button onClick={onClick}>Contacto</button> */}
       </div>
       <Button content="Agenda tu Demo" />
     </nav>

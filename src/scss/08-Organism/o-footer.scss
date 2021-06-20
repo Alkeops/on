@@ -7,23 +7,39 @@
   font-weight: bolder;
   font-size: 20px;
   padding: 50px 15px 30px;
-  a {
-    font-size: 18px;
-    font-weight: 400;
-    color: $color-white;
-    &:hover {
-      
-      font-weight: 600;
-      border: none;
-    }
-  }
-  &__contacto{
+  
+  &__contacto {
     border-bottom: 1px solid $color-white;
     padding-bottom: 35px;
-    .a-title{
-      margin-bottom: 0;
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+      @include md() {
+        margin: 0 10px;
+      }
     }
-    
+    > p {
+      margin: 20px 0;
+    }
+    &-network {
+      &-options {
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        @include md(){
+          min-width: 300px;
+        }
+      }
+    }
+    &-options {
+      @include md() {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
   }
   &__input {
     border-bottom: 1px solid $color-white;
@@ -55,11 +71,25 @@
     @include md() {
       grid-template-columns: repeat(3, 1fr);
     }
+    @include xl(){
+      grid-template-columns: repeat(6, 1fr);
+    }
     &-links {
       padding: 10px 0 45px;
       display: grid;
       grid-gap: 16px;
       grid-template-columns: 1fr;
+      a {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-white;
+        &:hover {
+          color: lighten($color-sexy-blue, 35);
+          font-weight: 600;
+          border: none;
+        }
+      }
     }
   }
   &__copy {

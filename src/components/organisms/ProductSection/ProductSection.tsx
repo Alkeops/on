@@ -12,11 +12,11 @@ const ProductSection = () => {
         <div className={`${prefix}__header`}>
           <div>
             {" "}
-            <Paragraph>DESCUBRE EL POTENCIAL</Paragraph>
+            <Paragraph>AUMENTA TU PRODUCTIVIDAD</Paragraph>
             <Title>
               Una<span>potente</span> herramienta a tu alcance
             </Title>
-            <Button content="Pruebala ahora" />
+            <Button content="Pruébala ahora" />
           </div>
         </div>
       </Container>
@@ -26,30 +26,30 @@ const ProductSection = () => {
           <div className={`${prefix}__skills-point`}>
             <ProductImage />
             <Paragraph isProductPoint>
-              Gracias a nuestro sistema "Image Resize by Nubesk" puedes adaptar
-              las imagenes de cualquier producto a cualquier canal de venta que
-              necesites.
+              Gracias a nuestro sistema “Image Resize & Renaming” by Nubesk
+              puedes adaptar y renombrar imágenes en segundos de acuerdo a las
+              especificaciones que cualquier marketplace o canal de venta
+              digital te pida.
             </Paragraph>
           </div>
           <div className={`${prefix}__skills-point`}>
             <ProductImage />
             <Paragraph isProductPoint>
-              Con nuestra nueva tecnología elimina los fondos de tus imagenes
-              con un solo click.
+              Elimina los fondos de tus imágenes en un solo click y ponles el
+              color que más te sirva.
             </Paragraph>
           </div>
           <div className={`${prefix}__skills-point`}>
             <ProductImage />
             <Paragraph isProductPoint>
-              Nubesk te permite editar todos los campos necesarios de tu
-              producto/articulo desde un unico punto.
+              Edita los campos y atributos de tus productos desde un sólo lugar
             </Paragraph>
           </div>
           <div className={`${prefix}__skills-point`}>
             <ProductImage />
             <Paragraph isProductPoint>
-              Todos tus datos e imagenes estan seguros en NubeskCloud y siempre
-              disponibles para que puedas compartirlas en cualquier momento.
+              Todos tus datos e imágenes están seguros y disponibles en
+              cualquier momento dentro de NubeskCloud
             </Paragraph>
           </div>
         </Container>
@@ -57,7 +57,7 @@ const ProductSection = () => {
       <div className={`${prefix}__banner`}>
         <Container>
           <div className={`${prefix}__banner-content`}>
-            <Title isWhite>Ahorra tiempo junto a Nubesk</Title>
+            <Title isWhite>Recupera tu tiempo junto a Nubesk</Title>
             <Button content="Comienza ahora" />
           </div>
         </Container>
@@ -77,17 +77,33 @@ const ProductSection = () => {
               <h2>Exporta</h2>
             </div>{" "}
             <div className={`${prefix}__last-chance-point`}>
-              <NubeskIcons icon="File" />
+              <NubeskIcons icon="Expand" />
+              <h2>Adapta</h2>
+            </div>{" "}
+            <div className={`${prefix}__last-chance-point`}>
+              <NubeskIcons icon="Rename" />
+              <h2>Renombra</h2>
+            </div>{" "}
+            <div className={`${prefix}__last-chance-point`}>
+              <NubeskIcons icon="Color" />
+              <h2>Cambia el fondo</h2>
+            </div>{" "}
+            <div className={`${prefix}__last-chance-point`}>
+              <NubeskIcons icon="Group" />
               <h2>Categoriza</h2>
+            </div>{" "}
+            <div className={`${prefix}__last-chance-point`}>
+              <NubeskIcons icon="Campos" />
+              <h2>Crea tus campos</h2>
             </div>{" "}
             <div className={`${prefix}__last-chance-point`}>
               <NubeskIcons icon="Organize" /> <h2>Filtra</h2>
             </div>{" "}
             <div className={`${prefix}__last-chance-point`}>
-              <NubeskIcons icon="Campos" /> <h2>Crea los campos necesarios</h2>
+              <NubeskIcons icon="Share" /> <h2>Comparte</h2>
             </div>{" "}
             <div className={`${prefix}__last-chance-point`}>
-              <NubeskIcons icon="Edit" /> <h2>Agrega tus canales de venta</h2>
+              <NubeskIcons icon="Edit" /> <h2>Agrega canales de venta</h2>
             </div>
           </div>
         </div>

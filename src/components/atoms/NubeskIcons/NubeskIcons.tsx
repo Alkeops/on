@@ -17,32 +17,59 @@ import Import from "@assets/icons/import.svg";
 import Share from "@assets/icons/share.svg";
 import StarterCheck from "@assets/icons/starterCheck.svg";
 import EnterpriseCheck from "@assets/icons/enterpriseCheck.svg";
-
+import {
+  AiOutlineMail as MailIcon,
+  AiOutlineWhatsApp as Whatsapp,
+  AiOutlineExpand as Expand,
+  AiOutlineBgColors as Color,
+} from "react-icons/ai";
+import {
+  FaHeadset as Headset,
+  FaFacebookF as Facebook,
+  FaTwitter as Twitter,
+  FaYoutube as Youtube,
+  FaInstagram as Instagram,
+  FaLinkedinIn as Linkedin,
+} from "react-icons/fa";
+import {CgRename as Rename} from "react-icons/cg";
+import {ImMakeGroup as Group} from "react-icons/im";
 const NubeskIcon = ({ icon }) => {
   const iconsMap = {
     Adapta,
     Almacena,
     Campos,
+    Color,
     Edit,
     EnterpriseCheck,
+    Expand,
     Export,
+    Facebook,
     File,
     Filter,
     Gift,
+    Group,
+    Headset,
     Import,
+    Instagram,
     Layer,
+    Linkedin,
+    MailIcon,
     Minimize,
     Organize,
     Pencil,
+    Rename,
     Resize,
     Share,
     StarterCheck,
+    Twitter,
     Upload,
+    Whatsapp,
+    Youtube,
   };
 
   const Icon = iconsMap[icon];
 
-  return <Icon className={`icon`} />;
+  return <Icon className={`icon ${icon}`} />;
 };
 
 export default NubeskIcon;

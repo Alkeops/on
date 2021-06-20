@@ -1,7 +1,7 @@
 .o-product-section {
   &__header {
     margin-bottom: 50px;
-    @include xl(){
+    @include xl() {
       padding-bottom: 60px;
     }
     &-circle {
@@ -26,7 +26,9 @@
     background: linear-gradient($color-sexy-purple, $color-sexy-blue);
     width: 100%;
     padding: 90px 0 1px;
-    @include sm(){padding: 120px 0 1px;}
+    @include sm() {
+      padding: 120px 0 1px;
+    }
     &-point {
       align-items: center;
       display: grid;
@@ -42,13 +44,12 @@
         grid-gap: 60px;
         margin-bottom: 100px;
       }
-
     }
   }
   &__banner {
     padding: 0px 0 50px;
     background: $color-sexy-blue;
-    @include md(){
+    @include md() {
       padding-bottom: 80px;
     }
     &-content {
@@ -75,6 +76,7 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 50px;
+    cursor: default;
     svg {
       font-size: 60px;
       box-shadow: 6px 6px 16px $color-sexy-blue;
@@ -83,13 +85,23 @@
       background: linear-gradient($color-sexy-purple, $color-sexy-blue);
       min-width: 60px;
       border-radius: 15px;
-      @include md(){
+      width: 60px;
+      @include md() {
         font-size: 90px;
+        width: 90px;
+        height: 70px;
       }
     }
+
     &-points {
       display: grid;
       grid-template-columns: 1fr;
+      .Expand {
+        @include md() {
+          font-size: 70px !important;
+          width: 90px;
+        }
+      }
       @include sm() {
         grid-template-columns: 1fr 1fr;
       }
@@ -98,6 +110,7 @@
       align-items: center;
       display: flex;
       margin: 10px;
+
       h2 {
         width: 100%;
         text-align: left;
