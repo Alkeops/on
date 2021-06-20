@@ -1,4 +1,4 @@
-const API_URL = process.env.WORDPRESS_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL;
 
 export const fetchApi = async (query: string, { variables }: any = {}) => {
   const headers = { "Content-Type": "application/json" };
@@ -10,45 +10,37 @@ export const fetchApi = async (query: string, { variables }: any = {}) => {
       variables,
     }),
   });
-
   const { data, errors }: any = await response.json();
   if (errors) {
     console.log(errors);
     throw new Error("Failed to fetch API");
   }
+
   return data;
 };
-
-export const getAllPostsForBlog = async (preview : boolean) => {
+// TODO Only ssr
+export const getAllPostsForBlog = async (preview: boolean, after?: string) => {
   const data = await fetchApi(
-    `
-        query AllPosts {
-          posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
-              nodes {
-                title
-                excerpt
-                slug
-                date
-                featuredImage {
-                  node {
-                    sourceUrl
-                  }
-                }
-                author {
-                  node {
-                    name
-                    firstName
-                    lastName
-                    avatar {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          
+    `query AllPosts {
+      posts(where: {orderby: {field: DATE, order: DESC}}, first: 10 ${after ? `, after : "${after}"` : ""}) {
+        pageInfo {
+          startCursor
+          hasNextPage
+          endCursor
         }
-      `,
+        nodes {
+          title
+          excerpt(format: RENDERED)
+          slug
+          featuredImage {
+            node {
+              sourceUrl(size: POST_THUMBNAIL)
+            }
+          }
+        }
+      }
+    }
+       `,
     {
       variables: {
         onlyEnabled: !preview,

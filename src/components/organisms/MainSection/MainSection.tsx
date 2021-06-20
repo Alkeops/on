@@ -16,13 +16,10 @@ const MainSection = () => {
         <Woman className={`${prefix}__app-woman`} />
       </div>
       <div className={`${prefix}__info`}>
-        <Title>
-          La <span>mejor</span> herramienta para organizar tus productos
+        <Title isHome>
+          Beneficios de usar Nubesk
         </Title>
-        <Paragraph>
-          Con <span>NUBESK</span> crea, edita, adapta, renombra, categoriza,
-          guarda, importa, exporta y comparte todo lo que necesites.
-        </Paragraph>
+      
         <Button
           data-aos="fade-up"
           className={`${prefix}__info-button`}

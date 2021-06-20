@@ -21,7 +21,7 @@ const NavBar = ({
         <NavItem href="/blog" content="Blog" />
         <button onClick={onClick}>Contacto</button>
       </div>
-      <Button content="Prueba Gratis" />
+      <Button content="Agenda tu Demo" />
     </nav>
   );
 };

@@ -6,7 +6,7 @@
   @include sm() {
     width: 80%;
   }
-  &--full {
+/*   &--full {
     min-height: calc(100vh - $header-height-xs);
     @include sm() {
       min-height: calc(100vh - $header-height-md);
@@ -14,7 +14,7 @@
     @include md() {
       min-height: calc(100vh - $header-height-xl);
     }
-  }
+  } */
   &--wide {
     max-width: 100%;
     width: 100%;

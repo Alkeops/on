@@ -6,19 +6,19 @@
 $color-white: white;
 $color-black: #191919;
 $color-gray-dark: #343a40;
-$color-sexy-purple: #54095b;
+$color-sexy-purple: #926dde;
 $color-sexy-blue: #2a3873;
 
 /* FONT */
 
-$font-primary: "Lato", sans-serif;
+$font-primary: "Open sans", sans-serif;
 
 /*Header Height */
 $header-height-xs: 60px;
 $header-height-md: 75px;
 $header_height-xl: 100px;
 /* RESPONSIVE */
-
+ 
 /* Desktop */
 $screen-desktop-xxl: 2560px;
 $screen-desktop-xl: 1920px;
@@ -28,7 +28,7 @@ $screen-desktop-sm: 1366px;
 $screen-desktop-xs: 1280px;
 
 /* Tablet */
-$screen-tablet-md: 1024px;
+$screen-tablet-md: 1024px; 
 $screen-tablet-sm: 768px;
 
 /* Mobile */
@@ -36,7 +36,7 @@ $screen-mobile-md: 480px;
 $screen-mobile-sm: 320px;
 
 /* Breakpoints */
-
+ 
 $breakpoint-sm: 600px;
 $breakpoint-md: 900px;
 $breakpoint-xl: 1200px;

@@ -1,21 +1,26 @@
-import React, { useState } from "react";
-import Router from "next/router";
+import React, { useState, useEffect } from "react";
 import { getAllPostsForBlog } from "lib/api";
 import { GetStaticProps } from "next";
 import { PostTitle, DatePost, Excerpt, NavItem } from "@atoms";
 import { BlogPost } from "@organisms";
 import { UserLayout, Container } from "@templates";
 
-const blog = ({ allPosts: { nodes } }) => {
-  const { router } = Router;
-  console.log(router);
-  const [page, setPage] = useState(0);
-  console.log(nodes);
+const blog = ({ allPosts: { nodes, pageInfo } }) => {
+  const [data, setData] = useState(nodes);
+  const [next, setNext] = useState(pageInfo);
+  const [loading, setLoading] = useState(false);
+  const handleRequest = async () => {
+    setLoading(true);
+    const more = await getAllPostsForBlog(false, next.endCursor);
+    setData([...data, ...more.nodes]);
+    setNext(more.pageInfo);
+    setLoading(false);
+  };
   return (
     <UserLayout>
       <Container>
         <div className="t-blog">
-          {nodes.map((data: any, index: number) => (
+          {data.map((data: any, index: number) => (
             <BlogPost
               key={index}
               isFirst={index === 0}
@@ -23,10 +28,14 @@ const blog = ({ allPosts: { nodes } }) => {
               image={data.featuredImage?.node?.sourceUrl}
             />
           ))}
+          {next.hasNextPage ? (
+            !loading ? (
+              <button onClick={handleRequest}>Ver Otros</button>
+            ) : (
+              <h1>loading</h1>
+            )
+          ) : null}
         </div>
-        <button
-          onClick={() => Router.push({ pathname: "/blog", query: { page: 2 } })}
-        >asdsdasdsa</button>
       </Container>
     </UserLayout>
   );

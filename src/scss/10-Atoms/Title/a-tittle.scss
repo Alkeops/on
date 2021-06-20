@@ -24,4 +24,17 @@
   &.is-white{
     color: white;
   }
+  &.is-home{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bolder;
+    @include md(){
+      font-size: 80px;
+      line-height: 95px;
+    }
+    @include xxl(){
+      font-size: 90px;
+      line-height: 105px;
+    }
+  }
 }

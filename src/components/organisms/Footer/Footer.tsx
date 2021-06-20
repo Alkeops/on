@@ -1,5 +1,5 @@
 import React from "react";
-import { NavItem } from "@atoms";
+import { NavItem, Paragraph, Title } from "@atoms";
 import { InputSubscribe, BlockTitle } from "@molecules";
 import { Container } from "@templates";
 
@@ -8,6 +8,16 @@ const Footer = () => {
   return (
     <footer className={prefix}>
       <Container>
+        <div className={`${prefix}__contacto`}>
+          <Title>¿Quieres contratar Nubesk</Title>
+          <Paragraph>
+            Estamos para atenderte a través de estos medios 24/7 todos los días
+            del año
+          </Paragraph>
+          <div className={`${prefix}__contacto-options`}>
+          <NavItem content="Enviar correo" href="/" isFooter />
+          </div>
+        </div>
         <div className={`${prefix}__input`}>
           <BlockTitle title="Suscribete a nuestro newsletter">
             <p className={`${prefix}__input-p`}>

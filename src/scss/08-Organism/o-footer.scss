@@ -1,6 +1,5 @@
 .o-footer {
   background: $color-black;
-  bottom: 0;
   color: $color-white;
   display: flex;
   flex-wrap: wrap;
@@ -8,23 +7,27 @@
   font-weight: bolder;
   font-size: 20px;
   padding: 50px 15px 30px;
-  height: 720px;
-  @include sm(){
-    height: 655px;
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-white;
+    &:hover {
+      
+      font-weight: 600;
+      border: none;
+    }
   }
-  @include md(){
-    height: 550px;
-  }
-  @media(min-height: 735px){
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  &__contacto{
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 35px;
+    .a-title{
+      margin-bottom: 0;
+    }
+    
   }
   &__input {
     border-bottom: 1px solid $color-white;
-    padding-bottom: 35px;
+    padding: 35px 0;
     width: 100%;
     @include md() {
       display: flex;
@@ -57,16 +60,6 @@
       display: grid;
       grid-gap: 16px;
       grid-template-columns: 1fr;
-      a {
-        font-size: 18px;
-        font-weight: 400;
-        color: $color-white;
-        &:hover {
-          color: lighten($color-sexy-purple, 50);
-          font-weight: 600;
-          border: none;
-        }
-      }
     }
   }
   &__copy {
