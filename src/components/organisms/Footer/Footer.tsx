@@ -95,9 +95,6 @@ const Footer = () => {
             <div className={`${prefix}__navegation-links`}>
               <NavItem content="Distribuidores" href="/" isFooter />
               <NavItem content="Afiliados" href="/" isFooter />
-              <NavItem content="Precios" href="/" isFooter />
-              <NavItem content="Blog" href="/" isFooter />
-              <NavItem content="Contacto" href="/" isFooter />
             </div>
           </BlockTitle>
           
