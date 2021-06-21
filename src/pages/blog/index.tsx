@@ -9,6 +9,7 @@ const blog = ({ allPosts: { nodes, pageInfo } }) => {
   const [data, setData] = useState(nodes);
   const [next, setNext] = useState(pageInfo);
   const [loading, setLoading] = useState(false);
+  console.log(nodes)
   const handleRequest = async () => {
     setLoading(true);
     const more = await getAllPostsForBlog(false, next.endCursor);
