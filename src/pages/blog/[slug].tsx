@@ -15,7 +15,7 @@ const posts = ({ post, posts, preview }) => {
     <UserLayout>
       <img
         className={`${prefix}__image`}
-        src={postInfo.featuredImage?.node?.sourceUrl}
+        src={postInfo?.featuredImage?.node?.sourceUrl}
       />
       <Container>
         <BlogPost title={postInfo.title} content={postInfo.content} />
