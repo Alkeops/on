@@ -3,21 +3,22 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "lib/api";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { Markup } from "interweave";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BlogPost } from "@organisms";
 
 const posts = ({ post, posts, preview }) => {
+  const [postInfo, setPostInfo] = useState(post);
   const router = useRouter();
   const prefix: string = "p-blog-post";
-  const { content, title } = post; //En un useEffect para que no lance error
+ //En un useEffect para que no lance error
   return (
     <UserLayout>
       <img
         className={`${prefix}__image`}
-        src={post.featuredImage.node.sourceUrl}
+        src={postInfo.featuredImage.node.sourceUrl}
       />
       <Container>
-        <BlogPost title={title} content={content} />
+        <BlogPost title={postInfo.title} content={postInfo.content} />
       </Container>
     </UserLayout>
   );
