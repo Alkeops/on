@@ -145,7 +145,7 @@ export const getPostAndMorePosts = async (slug, preview, previewData) => {
             : ""
         }
       }
-      posts(first: 3, where: { orderby: { field: DATE, order: DESC } }) {
+      posts(first: 5, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
             ...PostFields

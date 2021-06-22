@@ -12,6 +12,9 @@
   .icon {
     font-size: 20px;
   }
+  &.is-white{
+    border: 2px solid black;
+  }
   &:hover {
       padding: 5px;
     .icon {
@@ -29,6 +32,9 @@
     }
     &.Youtube {
       background: #c4302b;
+    }
+    &.Whatsapp{
+      background:  #00bb2d ;
     }
     &.Instagram {
       background: linear-gradient(

@@ -1,7 +1,7 @@
 .o-blog-post {
   padding: 20px 0;
   @include md() {
-    padding: 50px 100px;
+    padding: 50px 100px 20px;
   }
   &__title {
     font-size: 35px;
