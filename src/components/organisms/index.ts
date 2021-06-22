@@ -1,4 +1,5 @@
-import BlogPost from "./BlogPost/BlogPost";
+import BlogPosts from "./BlogPosts/BlogPosts";
+import BlogPost from "./BlogPost/BlogPost"
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import MainSection from "./MainSection/MainSection";
@@ -8,6 +9,7 @@ import ProductSection from "./ProductSection/ProductSection";
 
 export {
   BlogPost,
+  BlogPosts,
   Footer,
   Header,
   MainSection,

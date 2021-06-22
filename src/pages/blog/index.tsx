@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAllPostsForBlog } from "lib/api";
 import { GetStaticProps } from "next";
 import { PostTitle, DatePost, Excerpt, NavItem } from "@atoms";
-import { BlogPost } from "@organisms";
+import { BlogPosts } from "@organisms";
 import { UserLayout, Container } from "@templates";
 
 const blog = ({ allPosts: { nodes, pageInfo } }) => {
@@ -22,7 +22,7 @@ const blog = ({ allPosts: { nodes, pageInfo } }) => {
       <Container>
         <div className="t-blog">
           {data.map((data: any, index: number) => (
-            <BlogPost
+            <BlogPosts
               key={index}
               isFirst={index === 0}
               {...data}

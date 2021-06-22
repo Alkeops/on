@@ -1,15 +1,15 @@
 .m-circle {
   /* top: 10vh;
   right: 26vw; */
-  top: -10vw;
+  top: -1vw;
   left: 25%;
   position: absolute;
   @include sm(){
-    top: -3vw;
+    top: -2vw;
     left: 80%;
   }
   @include xl(){
-    top: -4.5vw;
+    top: -0.5vw;
     left: 60%;
   }
   &__out {

@@ -6,11 +6,11 @@
   background: white;
   overflow: hidden;
   @include sm() {
-    padding-top: 95px;
+    padding-top: 75px;
     padding-bottom: 36px;
   }
   @include md() {
     padding-bottom: 50px;
-    padding-top: 180px;
+    padding-top: 100px;
   }
 }

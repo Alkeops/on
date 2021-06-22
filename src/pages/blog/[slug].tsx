@@ -4,17 +4,20 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { Markup } from "interweave";
 import React from "react";
+import { BlogPost } from "@organisms";
 
 const posts = ({ post, posts, preview }) => {
-    console.log({post, posts, preview})
   const router = useRouter();
+  const prefix: string = "p-blog-post";
   const { content, title } = post; //En un useEffect para que no lance error
   return (
     <UserLayout>
+      <img
+        className={`${prefix}__image`}
+        src={post.featuredImage.node.sourceUrl}
+      />
       <Container>
-          <img src={post.featuredImage.node.sourceUrl}/>
-        <h1>{title}</h1>
-        <Markup content={content} noWrap />
+        <BlogPost title={title} content={content} />
       </Container>
     </UserLayout>
   );
