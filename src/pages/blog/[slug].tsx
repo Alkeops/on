@@ -18,7 +18,7 @@ const posts = ({ post, posts, preview }) => {
         src={postInfo?.featuredImage?.node?.sourceUrl}
       />
       <Container>
-        <BlogPost title={postInfo.title} content={postInfo.content} />
+        <BlogPost title={postInfo?.title} content={postInfo?.content} />
       </Container>
     </UserLayout>
   );
