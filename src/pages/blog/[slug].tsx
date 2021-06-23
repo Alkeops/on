@@ -30,7 +30,7 @@ const posts = ({ post, posts, preview }) => {
         </div>
         <div className={`${prefix}__last-posts`}>
           <h3>Los artículos más recientes</h3>
-          {posts.edges.map(({ node: { title, featuredImage, slug } }) => (
+          {posts?.edges?.map(({ node: { title, featuredImage, slug } }) => (
             <LastPostItem
               key={title}
               title={title}
