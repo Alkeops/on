@@ -17,9 +17,9 @@ const MainSection = () => {
       </div>
       <div className={`${prefix}__info`}>
         <Title isHome>
-          Beneficios de usar Nubesk
+        Centraliza, Adapta, Renombra y Distribuye tus fotografías de eCommerce
         </Title>
-      
+      <Paragraph>Con Nubesk recupera tiempo perdido, mejora tu Time-to-market,  incrementa la productividad, automatiza procesos repetitivos y enfócate en vender más.</Paragraph>
         <Button
           data-aos="fade-up"
           className={`${prefix}__info-button`}

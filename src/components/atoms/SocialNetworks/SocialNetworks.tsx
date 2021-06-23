@@ -9,7 +9,7 @@ const SocialNetworks = ({
 }: {
   network: string;
   href: string;
-  isWhite: boolean;
+  isWhite?: boolean;
 }) => {
   const prefix: string = "a-social";
   const classForComponent: string = classNames(prefix, network, {

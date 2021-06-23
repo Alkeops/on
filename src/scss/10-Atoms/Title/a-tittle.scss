@@ -25,16 +25,17 @@
     color: white;
   }
   &.is-home{
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 30px;
+    line-height: 40px;
     font-weight: bolder;
     @include md(){
-      font-size: 80px;
-      line-height: 95px;
+      font-size: 40px;
+      line-height: 50px;
     }
     @include xxl(){
-      font-size: 90px;
-      line-height: 105px;
+      letter-spacing: 2px;
+      font-size: 55px;
+      line-height: 75px;
     }
   }
 }
