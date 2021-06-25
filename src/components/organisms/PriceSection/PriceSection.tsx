@@ -3,8 +3,11 @@ import Group from "@assets/illustrations/group.svg";
 import { Title, Button } from "@atoms";
 import { Circle } from "@molecules";
 import { PriceTable } from "@organisms";
+import { useRouter } from "next/router";
 const PriceSection = () => {
+  const router = useRouter();
   const prefix: string = "o-price-section";
+  const handleRouter = () => router.push("/prueba");
   return (
     <section className={prefix}>
       <div className={`${prefix}__header`}>
@@ -12,7 +15,7 @@ const PriceSection = () => {
           <Title>
             ¿Qué esperas para <span>organizar</span> tus productos?
           </Title>
-          <Button content="Empezar ahora" />
+          <Button content="Empezar ahora" onClick={handleRouter} />
         </div>
         <Group className={`${prefix}__header-group`} />
       </div>

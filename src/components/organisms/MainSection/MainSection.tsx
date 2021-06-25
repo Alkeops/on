@@ -3,10 +3,13 @@ import { Button, Paragraph, Title } from "@atoms";
 import Man from "@assets/illustrations/manDesk.svg";
 import Woman from "@assets/illustrations/woman.svg";
 import { Circle } from "@molecules";
+import { useRouter } from "next/router";
 
 const MainSection = () => {
+  const router = useRouter();
   const prefix: string = "o-main-section";
 
+  const handleRouter = () => router.push("/prueba")
   return (
     <section className={prefix}>
       <Circle />
@@ -24,6 +27,7 @@ const MainSection = () => {
           data-aos="fade-up"
           className={`${prefix}__info-button`}
           content="Prueba gratis ahora"
+          onClick={handleRouter}
         />
       </div>
     </section>

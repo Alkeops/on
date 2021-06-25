@@ -15,7 +15,7 @@ const Button = ({
     [className]: className,
   });
   return (
-    <button {...props} className={classForComponent}>
+    <button {...props} onClick={onClick} className={classForComponent}>
       {content}
     </button>
   );

@@ -1,4 +1,7 @@
 .o-product-section {
+  @include md() {
+    padding-top: 30px;
+  }
   &__header {
     margin-bottom: 50px;
     @include xl() {

@@ -1,10 +1,13 @@
 import { Title, Paragraph, Button, ProductImage, NubeskIcons } from "@atoms";
 import { Circle } from "@molecules";
 import { Container } from "@templates";
+import { useRouter } from "next/router";
 import React from "react";
 
 const ProductSection = () => {
+  const router = useRouter();
   const prefix: string = "o-product-section";
+  const handleRouter = () => router.push("/prueba");
   return (
     <section className={prefix}>
       <Container full>
@@ -16,7 +19,7 @@ const ProductSection = () => {
             <Title>
               Una<span>potente</span> herramienta a tu alcance
             </Title>
-            <Button content="Pruébala ahora" />
+            <Button content="Pruébala ahora" onClick={handleRouter} />
           </div>
         </div>
       </Container>
