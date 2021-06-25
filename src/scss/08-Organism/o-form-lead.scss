@@ -1,0 +1,37 @@
+.o-form-lead {
+  margin-top: 100px;
+  width: 100%;
+  @include md(){
+    width: 350px;
+  }
+  &__input {
+    font-size: 20px;
+    margin-bottom: 15px !important;
+    label {
+      top: -6px;
+      font-size: 20px;
+    }
+    input {
+      font-size: 18px;
+    }
+    .Mui-focused {
+      color: $color-sexy-purple !important;
+    }
+    .MuiInput-underline::after {
+      border-color: purple !important;
+    }
+    .MuiSelect-selectMenu {
+      position: relative;
+      top: 6px;
+      font-size: 18px !important;
+    }
+  }
+  &__check{
+      align-items: center;
+      display: flex;
+      margin-bottom: 15px;
+  }
+}
+.MuiMenuItem-root {
+  font-size: 18px !important;
+}
