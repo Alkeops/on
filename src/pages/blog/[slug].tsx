@@ -24,8 +24,8 @@ const posts = ({ post, posts, preview }) => {
           <h3>Compartelo</h3>
           <div className={`${prefix}__share-items`}>
             <SocialNetworks network="Facebook" href="/" isWhite />
-            <SocialNetworks network="Whatsapp" href="/" isWhite/>
-            <SocialNetworks network="Twitter" href="/" isWhite/>
+            <SocialNetworks network="Whatsapp" href="/" isWhite />
+            <SocialNetworks network="Twitter" href="/" isWhite  />
           </div>
         </div>
         <div className={`${prefix}__last-posts`}>

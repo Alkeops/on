@@ -17,7 +17,7 @@ const MainSection = () => {
       </div>
       <div className={`${prefix}__info`}>
         <Title isHome>
-        Centraliza, Adapta, Renombra y Distribuye tus fotografías de eCommerce
+        Centraliza, <span>Adapta</span>, Renombra y Distribuye tus <span>fotografías</span> de eCommerce
         </Title>
       <Paragraph>Con Nubesk recupera tiempo perdido, mejora tu Time-to-market,  incrementa la productividad, automatiza procesos repetitivos y enfócate en vender más.</Paragraph>
         <Button
