@@ -25,37 +25,35 @@ const ProductSection = () => {
       </Container>
       <Circle className={`${prefix}__header-circle`} />
       <div className={`${prefix}__skills`}>
-        <Container>
-          <div className={`${prefix}__skills-point`}>
-            <ProductImage />
-            <Paragraph isProductPoint>
-              Gracias a nuestro sistema “Image Resize & Renaming” by Nubesk
-              puedes adaptar y renombrar imágenes en segundos de acuerdo a las
-              especificaciones que cualquier marketplace o canal de venta
-              digital te pida.
-            </Paragraph>
-          </div>
-          <div className={`${prefix}__skills-point`}>
-            <ProductImage />
-            <Paragraph isProductPoint>
-              Elimina los fondos de tus imágenes en un solo click y ponles el
-              color que más te sirva.
-            </Paragraph>
-          </div>
-          <div className={`${prefix}__skills-point`}>
-            <ProductImage />
-            <Paragraph isProductPoint>
-              Edita los campos y atributos de tus productos desde un sólo lugar
-            </Paragraph>
-          </div>
-          <div className={`${prefix}__skills-point`}>
-            <ProductImage />
-            <Paragraph isProductPoint>
-              Todos tus datos e imágenes están seguros y disponibles en
-              cualquier momento dentro de NubeskCloud
-            </Paragraph>
-          </div>
-        </Container>
+        <div className={`${prefix}__skills-point`}>
+          <ProductImage />
+          <Paragraph isProductPoint>
+            Gracias a nuestro sistema “Image Resize & Renaming” by Nubesk puedes
+            adaptar y renombrar imágenes en segundos de acuerdo a las
+            especificaciones que cualquier marketplace o canal de venta digital
+            te pida.
+          </Paragraph>
+        </div>
+        <div className={`${prefix}__skills-point left`}>
+          <ProductImage />
+          <Paragraph isProductPoint>
+            Elimina los fondos de tus imágenes en un solo click y ponles el
+            color que más te sirva.
+          </Paragraph>
+        </div>
+        <div className={`${prefix}__skills-point`}>
+          <ProductImage />
+          <Paragraph isProductPoint>
+            Edita los campos y atributos de tus productos desde un sólo lugar
+          </Paragraph>
+        </div>
+        <div className={`${prefix}__skills-point left`}>
+          <ProductImage />
+          <Paragraph isProductPoint>
+            Todos tus datos e imágenes están seguros y disponibles en cualquier
+            momento dentro de NubeskCloud
+          </Paragraph>
+        </div>
       </div>
       <div className={`${prefix}__banner`}>
         <Container>

@@ -25,27 +25,64 @@
     }
   }
   &__skills {
-    min-height: 100vh;
     background: linear-gradient($color-sexy-purple, $color-sexy-blue);
     width: 100%;
-    padding: 90px 0 1px;
+    padding: 50px 0 1px;
     @include sm() {
-      padding: 120px 0 1px;
+      padding: 80px 0 1px;
+    }
+    @include md() {
+      padding-bottom: 80px;
     }
     &-point {
-      align-items: center;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 25px;
-      margin-bottom: 80px;
+      align-items: flex-start;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
       position: relative;
       z-index: 1;
-      @include sm() {
-        grid-template-columns: 3fr 2fr;
+      max-width: 95%;
+      margin: 0 auto 45px;
+      .a-product-image {
+        margin-bottom: 25px;
+        width: 100%;
+        @include md() {
+          width: 55%;
+          margin-right: 50px;
+          
+        }
+        @include xl(){
+          margin-right: 85px;
+        }
       }
+      &.left {
+        @include md() {
+          justify-content: flex-end;
+          .a-product-image {
+            order: 1;
+            margin: 0;
+            margin-left: 50px;
+            @include xl(){
+              margin-left: 85px;
+            }
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 20px;
+      }
+
+      .a-paragraph {
+        @include md() {
+          width: 35%;
+          max-width: 500px;
+        }
+      }
+
       @include md() {
-        grid-gap: 60px;
+        flex-direction: row;
         margin-bottom: 100px;
+        align-items: center;
       }
     }
   }
@@ -100,7 +137,7 @@
       display: grid;
       grid-template-columns: 1fr;
       padding: 0 0 50px;
-      @include md(){
+      @include md() {
         padding-bottom: 80px;
       }
       .Expand {
