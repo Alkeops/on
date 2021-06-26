@@ -99,6 +99,10 @@
     &-points {
       display: grid;
       grid-template-columns: 1fr;
+      padding: 0 0 50px;
+      @include md(){
+        padding-bottom: 80px;
+      }
       .Expand {
         @include md() {
           font-size: 70px !important;

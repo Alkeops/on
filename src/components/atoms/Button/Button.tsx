@@ -12,6 +12,7 @@ const Button = ({
   const prefix: string = "a-btn";
   const classForComponent: string = classNames(`${prefix}`, {
     [`${prefix}--error`]: type === "error",
+    [`${prefix}--secondary`]: type === "secondary",
     [className]: className,
   });
   return (

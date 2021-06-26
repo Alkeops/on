@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 0px;
-/*   min-height: calc(100vh -  80px); */
   @include xl() {
     padding-bottom: 260px;
   }

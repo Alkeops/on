@@ -2,15 +2,16 @@
 =                    Organism                 =
 =============================================*/
 
+@import "./o-benefits.scss";
+@import "./o-blog-post.scss";
+@import "./o-blog-posts.scss";
+@import "./o-footer.scss";
+@import "./o-form-lead.scss";
 @import "./o-header.scss";
 @import "./o-main-section.scss";
-@import "./o-footer.scss";
-@import "./o-price-section.scss";
 @import "./o-price-point.scss";
+@import "./o-price-section.scss";
 @import "./o-price-table.scss";
 @import "./o-product-section.scss";
-@import "./o-blog-posts.scss";
-@import "./o-blog-post.scss";
-@import "./o-form-lead.scss";
 
 /*=====    End of Organism              ======*/

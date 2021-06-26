@@ -1,4 +1,8 @@
 .p-precios{
+  padding-bottom: 50px;
+  @include md(){
+    padding-bottom: 80px;
+  }
     &__waves {
         color: $color-sexy-purple;
         width: 300%;

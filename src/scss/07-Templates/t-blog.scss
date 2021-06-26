@@ -1,9 +1,11 @@
 .t-blog{
     display: grid;
     gap: 30px;
+    padding-bottom: 50px;
     @include md(){
         gap: 40px;
         grid-template-columns: 1fr 1fr;
+        padding-bottom: 80px;
     }
     @include xl(){
         gap: 55px;

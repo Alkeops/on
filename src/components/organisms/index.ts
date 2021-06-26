@@ -7,9 +7,11 @@ import MainSection from "./MainSection/MainSection";
 import PriceSection from "./PriceSection/PriceSection";
 import PriceTable from "./PriceTable/PriceTable";
 import ProductSection from "./ProductSection/ProductSection";
+import Benefits from "./Benefits/Benefits";
 
 export {
   BlogPost,
+  Benefits,
   BlogPosts,
   Footer,
   FormLead,

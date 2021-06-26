@@ -1,0 +1,55 @@
+.o-benefits {
+  margin-top: 50px;
+  color: white;
+  padding: 30px 0 50px;
+  background: linear-gradient($color-sexy-purple, $color-sexy-blue);
+@include md(){
+    padding: 50px 10vw 80px;
+}
+  &__title {
+    padding: 20px 0;
+    .a-title.is-home {
+      font-size: 45px;
+      line-height: 50px;
+      letter-spacing: 0.3px;
+      @include sm(){
+          font-size: 50px;
+      }
+      @include md(){
+          font-size: 65px;
+      }
+      span {
+        color: white;
+      }
+    }
+  }
+  &__button {
+    margin-top: 20px;
+    width: 100%;
+    @include sm() {
+      width: initial;
+      margin-top: 40px;
+    }
+  }
+  &__points{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap:  wrap;
+      margin-bottom: 50px;
+      @include md(){
+          justify-content: space-between;
+      }
+      span{
+          font-size: 19px;
+          line-height: 27px;
+          font-weight: 400;
+          display: block;
+          margin-bottom: 15px;
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: boxShadow(3, lighten($color-sexy-blue, 30));
+          max-width: 350px;
+      }
+  }
+}
