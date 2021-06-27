@@ -26,7 +26,7 @@ const ProductSection = () => {
       <Circle className={`${prefix}__header-circle`} />
       <div className={`${prefix}__skills`}>
         <div className={`${prefix}__skills-point`}>
-          <ProductImage />
+          <ProductImage video="Adapta" />
           <Paragraph isProductPoint>
             Gracias a nuestro sistema “Image Resize & Renaming” by Nubesk puedes
             adaptar y renombrar imágenes en segundos de acuerdo a las
@@ -35,20 +35,20 @@ const ProductSection = () => {
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point left`}>
-          <ProductImage />
+          <ProductImage video="Categoriza"/>
           <Paragraph isProductPoint>
             Elimina los fondos de tus imágenes en un solo click y ponles el
             color que más te sirva.
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point`}>
-          <ProductImage />
+          <ProductImage video="Edita"/>
           <Paragraph isProductPoint>
             Edita los campos y atributos de tus productos desde un sólo lugar
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point left`}>
-          <ProductImage />
+          <ProductImage video="NubeskCloud"/>
           <Paragraph isProductPoint>
             Todos tus datos e imágenes están seguros y disponibles en cualquier
             momento dentro de NubeskCloud

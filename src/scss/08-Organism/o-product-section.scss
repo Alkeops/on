@@ -44,15 +44,8 @@
       max-width: 95%;
       margin: 0 auto 45px;
       .a-product-image {
-        border-radius: 5px;
         margin-bottom: 25px;
         width: 100%;
-        video {
-          width: 100%;
-          border-radius: 5px;
-          height: 100%;
-          object-fit: cover;
-        }
         @include md() {
           width: 55%;
           margin-right: 50px;
