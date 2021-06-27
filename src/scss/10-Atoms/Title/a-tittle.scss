@@ -12,7 +12,6 @@
     font-weight: bolder;
   }
   @include md() {
-    font-size: 46px;
     line-height: 60px;
     margin-bottom: 25px;
   }
@@ -25,17 +24,17 @@
     color: white;
   }
   &.is-home{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 45px;
     font-weight: bolder;
     @include md(){
-      font-size: 40px;
-      line-height: 50px;
+      font-size: 55px;
+      line-height: 65px;
     }
     @include xxl(){
       letter-spacing: 2px;
-      font-size: 55px;
-      line-height: 75px;
+      font-size: 70px;
+      line-height: 85px;
     }
   }
 }

@@ -12,39 +12,38 @@ const Benefits = () => {
       <Container full isXlWide>
         <div className={`${prefix}__title`}>
           <Title isHome>
-            Beneficios de usar
-            <span>Nubesk</span>
+            <span>Beneficios</span> de usar Nubesk
           </Title>
         </div>
         <div className={`${prefix}__points`}>
           <div className={`${prefix}__points-point`}>
             <Manual />
-            <span>
+            <Paragraph>
               Olvídate de procesos manuales y errores al utilizar múltiples
               sistemas y decenas de versiones de hojas de cálculo.{" "}
-            </span>
+            </Paragraph>
           </div>
-          <div className={`${prefix}__points-point`}>
+          <div className={`${prefix}__points-point left`}>
             <Manual />
-            <span>
+            <Paragraph>
               Adapta tus fotos, renómbralas y cambia el fondo de acuerdo a tus
               necesidades.
-            </span>
+            </Paragraph>
           </div>
           <div className={`${prefix}__points-point`}>
             <Manual />
-            <span>
+            <Paragraph>
               {" "}
               Controla los derechos de uso de tus fotos y evita costos
               innecesarios.
-            </span>
+            </Paragraph>
           </div>
-          <div className={`${prefix}__points-point`}>
+          <div className={`${prefix}__points-point left`}>
             <Manual />
-            <span>
+            <Paragraph>
               Agiliza el acceso, la edición y distribucion de tus fotografías
               para e-commerce.
-            </span>
+            </Paragraph>
           </div>
         </div>
         <Button

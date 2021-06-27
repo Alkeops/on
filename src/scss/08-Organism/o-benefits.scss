@@ -3,23 +3,28 @@
   color: white;
   padding: 30px 0 50px;
   background: linear-gradient($color-sexy-purple, $color-sexy-blue);
-@include md(){
+  @include md() {
+    padding: 50px 0 80px;
+  }
+  @include xl() {
     padding: 50px 10vw 80px;
-}
+  }
   &__title {
     padding: 20px 0;
     .a-title.is-home {
       font-size: 45px;
       line-height: 50px;
-      letter-spacing: 0.3px;
-      @include sm(){
-          font-size: 50px;
+      letter-spacing: 0.7px;
+      @include sm() {
+        font-size: 50px;
+        line-height: 60px;
       }
-      @include md(){
-          font-size: 65px;
+      @include md() {
+        font-size: 65px;
+        line-height: 75px;
       }
       span {
-        color: white;
+       color: white;
       }
     }
   }
@@ -31,23 +36,54 @@
       margin-top: 40px;
     }
   }
-  &__points{
-      display: flex;
-      align-items: center;
+  &__points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    @include md() {
+      justify-content: space-between;
+    }
+    &-point {
+      width: 100%;
       justify-content: center;
-      flex-wrap:  wrap;
-      margin-bottom: 50px;
-      @include md(){
-          justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      @include sm() {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 90px;
       }
-      &-point{
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        svg{
-          width: 100%;
+      svg {
+        width: 75%;
+        max-height: 500px;
+        margin-bottom: 25px;
+        @include sm() {
+          margin-bottom: 0;
+          font-size: 100vw;
+          width: 50%;
         }
-        span{
+      }
+      .a-paragraph {
+        max-width: 550px;
+        @include sm(){
+          width: 50%;
+        }
+        @include md(){
+        }
+      }
+      &.left {
+        @include sm() {
+          justify-content: flex-end;
+          svg {
+            order: 1;
+          }
+        }
+      }
+      /* span{
           font-size: 21px;
           line-height: 32px;
           font-weight: 400;
@@ -55,11 +91,11 @@
           margin-bottom: 15px;
           padding: 20px;
           border-radius: 15px;
-          border: 1px solid lighten($color-sexy-blue, 30);
-          box-shadow: boxShadow(3, lighten($color-sexy-blue, 30));
           max-width: 350px;
-      }
-      }
-      
+          @include sm(){
+            margin-left: 20px;
+          }
+      } */
+    }
   }
 }
