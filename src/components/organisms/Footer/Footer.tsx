@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={`${prefix}__contacto`}>
           <Title>¿Quieres contratar Nubesk</Title>
           <Paragraph>
-            Estamos para atenderte a través de estos medios 24/7 todos los días
+            Estamos para atenderte a través de estos medios todos los días
             del año
           </Paragraph>
           <div className={`${prefix}__contacto-options`}>

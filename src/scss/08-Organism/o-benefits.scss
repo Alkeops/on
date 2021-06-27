@@ -40,16 +40,26 @@
       @include md(){
           justify-content: space-between;
       }
-      span{
-          font-size: 19px;
-          line-height: 27px;
+      &-point{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        svg{
+          width: 100%;
+        }
+        span{
+          font-size: 21px;
+          line-height: 32px;
           font-weight: 400;
           display: block;
           margin-bottom: 15px;
           padding: 20px;
           border-radius: 15px;
+          border: 1px solid lighten($color-sexy-blue, 30);
           box-shadow: boxShadow(3, lighten($color-sexy-blue, 30));
           max-width: 350px;
       }
+      }
+      
   }
 }
