@@ -11,12 +11,17 @@
     justify-content: space-between;
   }
   &__app {
-    background: white;
-    box-shadow: 0px 4px 16px black;
-    height: 270px;
+    max-height: 600px;
     margin-bottom: 55px;
     position: relative;
     width: 100%;
+    video {
+      width: 100%;
+      border-radius: 15px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0px 6px 16px black;
+    }
     &-man,
     &-woman {
       font-size: 10.8vw;
@@ -32,17 +37,11 @@
       left: 100%;
     }
     @include sm() {
-      height: 400px;
       margin-bottom: 110px;
     }
     @include xl() {
-      height: 600px;
       max-width: 55%;
       order: 2;
-    }
-    & > div{
-      height: 500px;
-      width: 100%;
     }
   }
   &__info {

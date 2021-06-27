@@ -14,7 +14,12 @@ const MainSection = () => {
     <section className={prefix}>
       <Circle />
       <div className={`${prefix}__app`}>
-        <div></div>
+        <div><video playsInline autoPlay loop muted>
+            <source
+              src={`/videos/Adapta.mp4`}
+              type="video/mp4"
+            />
+          </video></div>
         <Man className={`${prefix}__app-man`} />
         <Woman className={`${prefix}__app-woman`} />
       </div>
