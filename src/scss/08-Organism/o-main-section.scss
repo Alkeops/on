@@ -1,13 +1,13 @@
 .o-main-section {
   position: relative;
-  padding-top: 80px;
+  padding-top: 25px;
   padding-bottom: 0px;
-  @include xl() {
-    padding-bottom: 260px;
+  @include md(){
+    padding-top: 80px;
   }
   @include xl() {
     align-items: center;
-    display: flex;
+    display: flex;  padding-bottom: 260px;
     justify-content: space-between;
   }
   &__app {
@@ -46,7 +46,7 @@
     }
   }
   &__info {
-    padding-top: 25px;
+    padding-top: 40px;
     &-button {
       margin-top: 20px;
       width: 100%;

@@ -24,7 +24,7 @@
         line-height: 75px;
       }
       span {
-       color: white;
+        color: white;
       }
     }
   }
@@ -50,29 +50,43 @@
       justify-content: center;
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 25px;
       @include sm() {
         justify-content: flex-start;
         flex-wrap: nowrap;
         align-items: center;
-        margin-bottom: 90px;
       }
+
       svg {
         width: 75%;
-        max-height: 500px;
+        max-height: 700px;
         margin-bottom: 25px;
         @include sm() {
           margin-bottom: 0;
           font-size: 100vw;
-          width: 50%;
+          width: 54%;
         }
+      }
+      /* &:first-child {
+        svg {
+          width: 60%;
+          @include md() {
+            width: 40%;
+            margin: 100px 150px 50px 200px;
+          }
+          @include xl(){
+            width: 25%;
+          }
+        }
+      } */
+      &:last-child{
+        margin-bottom: 0;
       }
       .a-paragraph {
         max-width: 550px;
-        @include sm(){
+        @include sm() {
           width: 50%;
         }
-        @include md(){
+        @include md() {
         }
       }
       &.left {

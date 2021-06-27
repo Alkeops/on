@@ -3,6 +3,9 @@ import { Button, Paragraph, Title } from "@atoms";
 import { useRouter } from "next/router";
 import { Container } from "@templates";
 import Manual from "@assets/illustrations/manual.svg";
+import Formatos from "@assets/illustrations/formatos.svg";
+import Licencias from "@assets/illustrations/licencias.svg";
+import Magia from "@assets/illustrations/magia.svg";
 const Benefits = () => {
   const router = useRouter();
   const prefix: string = "o-benefits";
@@ -24,14 +27,14 @@ const Benefits = () => {
             </Paragraph>
           </div>
           <div className={`${prefix}__points-point left`}>
-            <Manual />
+            <Magia />
             <Paragraph>
               Adapta tus fotos, renómbralas y cambia el fondo de acuerdo a tus
               necesidades.
             </Paragraph>
           </div>
           <div className={`${prefix}__points-point`}>
-            <Manual />
+            <Licencias />
             <Paragraph>
               {" "}
               Controla los derechos de uso de tus fotos y evita costos
@@ -39,7 +42,7 @@ const Benefits = () => {
             </Paragraph>
           </div>
           <div className={`${prefix}__points-point left`}>
-            <Manual />
+            <Formatos />
             <Paragraph>
               Agiliza el acceso, la edición y distribucion de tus fotografías
               para e-commerce.
