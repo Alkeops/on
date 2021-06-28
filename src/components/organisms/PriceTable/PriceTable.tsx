@@ -7,10 +7,12 @@ const PriceTable = ({
   title,
   isStarter,
   isEntrepreneur,
+  onClick,
 }: {
   title: string;
   isStarter?: boolean;
   isEntrepreneur?: boolean;
+  onClick: () => void;
 }) => {
   const prefix: string = "o-price-table";
   const classForComponent: string = classNames(`${prefix}`, {
@@ -76,6 +78,7 @@ const PriceTable = ({
             isStarter || isEntrepreneur ? "Comienza Ahora" : "Contactanos"
           }
           className={`${prefix}__button`}
+          onClick={onClick}
         />
       </div>
     </div>

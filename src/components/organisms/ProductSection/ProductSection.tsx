@@ -1,13 +1,11 @@
 import { Title, Paragraph, Button, ProductImage, NubeskIcons } from "@atoms";
 import { Circle } from "@molecules";
 import { Container } from "@templates";
-import { useRouter } from "next/router";
 import React from "react";
-
+import { useAppContext } from "@contexts/AppContext";
 const ProductSection = () => {
-  const router = useRouter();
+  const { openModal } = useAppContext();
   const prefix: string = "o-product-section";
-  const handleRouter = () => router.push("/prueba");
   return (
     <section className={prefix}>
       <Container full>
@@ -19,7 +17,7 @@ const ProductSection = () => {
             <Title>
               Una<span>potente</span> herramienta a tu alcance
             </Title>
-            <Button content="Pruébala ahora" onClick={handleRouter} />
+            <Button content="Pruébala ahora" onClick={openModal} />
           </div>
         </div>
       </Container>
@@ -35,20 +33,20 @@ const ProductSection = () => {
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point left`}>
-          <ProductImage video="Categoriza"/>
+          <ProductImage video="Categoriza" />
           <Paragraph isProductPoint>
             Elimina los fondos de tus imágenes en un solo click y ponles el
             color que más te sirva.
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point`}>
-          <ProductImage video="Edita"/>
+          <ProductImage video="Edita" />
           <Paragraph isProductPoint>
             Edita los campos y atributos de tus productos desde un sólo lugar
           </Paragraph>
         </div>
         <div className={`${prefix}__skills-point left`}>
-          <ProductImage video="NubeskCloud"/>
+          <ProductImage video="NubeskCloud" />
           <Paragraph isProductPoint>
             Todos tus datos e imágenes están seguros y disponibles en cualquier
             momento dentro de NubeskCloud
@@ -59,7 +57,7 @@ const ProductSection = () => {
         <Container>
           <div className={`${prefix}__banner-content`}>
             <Title isWhite>Recupera tu tiempo junto a Nubesk</Title>
-            <Button content="Comienza ahora" />
+            <Button content="Comienza ahora" onClick={openModal}/>
           </div>
         </Container>
       </div>

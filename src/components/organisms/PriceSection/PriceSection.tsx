@@ -3,11 +3,10 @@ import Group from "@assets/illustrations/group.svg";
 import { Title, Button } from "@atoms";
 import { Circle } from "@molecules";
 import { PriceTable } from "@organisms";
-import { useRouter } from "next/router";
+import { useAppContext } from "@contexts/AppContext";
 const PriceSection = () => {
-  const router = useRouter();
   const prefix: string = "o-price-section";
-  const handleRouter = () => router.push("/prueba");
+  const { openModal } = useAppContext();
   return (
     <section className={prefix}>
       <div className={`${prefix}__header`}>
@@ -15,20 +14,20 @@ const PriceSection = () => {
           <Title>
             ¿Qué esperas para <span>organizar</span> tus productos?
           </Title>
-          <Button content="Empezar ahora" onClick={handleRouter} />
+          <Button content="Empezar ahora" onClick={openModal} />
         </div>
         <Group className={`${prefix}__header-group`} />
       </div>
       <div className={`${prefix}__tables`}>
         <div className={`${prefix}__tables-align`}>
           {" "}
-          <PriceTable title="Entrepreneur" isEntrepreneur />
+          <PriceTable title="Entrepreneur" isEntrepreneur onClick={openModal} />
         </div>
         <div className={`${prefix}__tables-align`}>
-          <PriceTable title="Seller" isStarter />{" "}
+          <PriceTable title="Seller" isStarter onClick={openModal} />{" "}
         </div>
         <div className={`${prefix}__tables-align`}>
-          <PriceTable title="Enterprise" />
+          <PriceTable title="Enterprise" onClick={openModal} />
         </div>
       </div>
       <Circle className={`${prefix}__circle`} />

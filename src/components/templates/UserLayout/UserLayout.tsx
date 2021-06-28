@@ -1,19 +1,19 @@
 import { ReactNode, useState } from "react";
 import Head from "next/head";
 import { Header, Footer, FormLead } from "@organisms";
-import { Button } from "@atoms";
 import { Modal } from "@templates";
+import { useAppContext } from "@contexts/AppContext";
 const UserLayout = ({ children }: { children: ReactNode }) => {
-  const [openModal, setOpenModal] = useState(false);
+  const { contactModal, closeModal, openModal } = useAppContext();
   return (
     <>
       <Head>
         <title>Nubesk</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Header onClick={() => setOpenModal(true)} isOpen={openModal} />
-      {openModal ? (
-        <Modal onClick={() => setOpenModal(false)}>
+      <Header onClick={openModal} isOpen={contactModal} />
+      {contactModal ? (
+        <Modal onClick={closeModal}>
           <h2>Te contactamos</h2>
           <FormLead />
         </Modal>

@@ -19,10 +19,10 @@
       "@molecules": ["components/molecules"],
       "@organisms": ["components/organisms"],
       "@templates": ["components/templates"],
-      "@contexts": ["contexts"],
       "@utils": ["utils"],
       "@hooks": ["hooks"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@contexts/*": ["contexts/*"],
     }
   },
   "include": [

@@ -24,6 +24,11 @@ body {
   font-size: 16px;
   letter-spacing: 0.3px;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 a {
   color: inherit;
@@ -45,7 +50,7 @@ h6 {
   font-family: $font-primary;
   margin: 0;
 }
-p{
+p {
   font-weight: 400;
   margin: 0;
 }

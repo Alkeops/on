@@ -3,6 +3,7 @@ import "normalize.css";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import "scss/index.scss";
+import {AppProvider} from "@contexts/AppContext";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -13,7 +14,11 @@ function MyApp({ Component, pageProps }) {
     });
     AOS.refresh();
   }, []);
-  return <Component {...pageProps} />;
+  return (
+    <AppProvider>
+      <Component {...pageProps} />
+    </AppProvider>
+  );
 }
 
 export default MyApp;
