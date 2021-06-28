@@ -16,7 +16,19 @@ const FormLead = () => {
   const [form, setForm] = useState<any>({});
   const [terms, setTerms] = useState(false);
   const [disable, setDisable] = useState(true);
+  const handleSubmit = (e) => {
 
+    e.preventDefault();
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    })
+
+  };
   const handleForm = ({ target: { value, name } }) => {
     setForm({
       ...form,
@@ -103,7 +115,7 @@ const FormLead = () => {
         <span>Acepto la Política de Privacidad</span>
       </div>
 
-      <Button content="Contáctenme" disabled={disable} />
+      <Button content="Contáctenme" disabled={disable} onClick={e => handleSubmit(e)}/>
     </form>
   );
 };

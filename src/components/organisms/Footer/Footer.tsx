@@ -1,5 +1,5 @@
 import React from "react";
-import { NavItem, Paragraph, Title, SocialNetworks } from "@atoms";
+import { NavItem, Paragraph, Title, SocialNetworks, Button } from "@atoms";
 import { InputSubscribe, BlockTitle, FooterContact } from "@molecules";
 import { Container } from "@templates";
 
@@ -60,7 +60,6 @@ const Footer = () => {
               <NavItem content="Producto" href="/producto" isFooter />
               <NavItem content="Precios" href="/precios" isFooter />
               <NavItem content="Blog" href="/blog" isFooter />
-              <NavItem content="Contacto" href="/contacto" isFooter />
             </div>
           </BlockTitle>
          {/*  <BlockTitle title="Compañia">
