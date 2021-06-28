@@ -103,7 +103,7 @@ const FormLead = () => {
         <span>Acepto la Política de Privacidad</span>
       </div>
 
-      <Button content="Descargar" disabled={disable} />
+      <Button content="Contáctenme" disabled={disable} />
     </form>
   );
 };

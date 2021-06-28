@@ -16,10 +16,10 @@
     border: 3px solid $color-sexy-blue;
     box-shadow: 0px 6px 16px $color-sexy-blue;
     width: 95%;
-    max-width: 375px;
+    max-width: 400px;
     color: $color-black;
     position: relative;
-    label{
+   /*  label{
         margin-top: 20px;
         font-weight: 600;
         color: black;
@@ -32,7 +32,7 @@
         width: 100%;
         border: 1px solid black;
         padding: 20px;
-    }
+    } */
     .a-btn{
         width: 100%;
         margin-top: 20px;
@@ -42,7 +42,7 @@
   &__close {
     font-size: 25px;
     right: 25px;
-    top: 25px;
+    top: 18px;
     font-weight: bolder;
     position: absolute;
   }
