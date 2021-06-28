@@ -63,7 +63,7 @@ const Footer = () => {
               <NavItem content="Contacto" href="/contacto" isFooter />
             </div>
           </BlockTitle>
-          <BlockTitle title="Compañia">
+         {/*  <BlockTitle title="Compañia">
             <div className={`${prefix}__navegation-links`}>
               <NavItem content="¿Quiénes somos?" href="/" isFooter />
               <NavItem content="Prensa" href="/" isFooter />
@@ -96,7 +96,7 @@ const Footer = () => {
               <NavItem content="Distribuidores" href="/" isFooter />
               <NavItem content="Afiliados" href="/" isFooter />
             </div>
-          </BlockTitle>
+          </BlockTitle> */}
           
          
         </div>{" "}
