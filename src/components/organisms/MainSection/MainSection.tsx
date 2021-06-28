@@ -6,7 +6,7 @@ import { Circle } from "@molecules";
 import { useAppContext } from "@contexts/AppContext";
 
 const MainSection = () => {
-  const { openModal } = useAppContext();
+  const { openModal, emailSubject } = useAppContext();
   const prefix: string = "o-main-section";
 
   return (
@@ -35,7 +35,7 @@ const MainSection = () => {
           data-aos="fade-up"
           className={`${prefix}__info-button`}
           content="Prueba gratis ahora"
-          onClick={openModal}
+          onClick={() => { emailSubject("Este usuario quiere ser contactado"); openModal();}}
         />
       </div>
     </section>

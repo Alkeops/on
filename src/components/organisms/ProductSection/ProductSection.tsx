@@ -4,7 +4,7 @@ import { Container } from "@templates";
 import React from "react";
 import { useAppContext } from "@contexts/AppContext";
 const ProductSection = () => {
-  const { openModal } = useAppContext();
+  const { openModal, emailSubject } = useAppContext();
   const prefix: string = "o-product-section";
   return (
     <section className={prefix}>
@@ -17,7 +17,13 @@ const ProductSection = () => {
             <Title>
               Una<span>potente</span> herramienta a tu alcance
             </Title>
-            <Button content="Pruébala ahora" onClick={openModal} />
+            <Button
+              content="Pruébala ahora"
+              onClick={() => {
+                emailSubject("Este usuario quiere probarla ya");
+                openModal();
+              }}
+            />
           </div>
         </div>
       </Container>
@@ -57,7 +63,13 @@ const ProductSection = () => {
         <Container>
           <div className={`${prefix}__banner-content`}>
             <Title isWhite>Recupera tu tiempo junto a Nubesk</Title>
-            <Button content="Comienza ahora" onClick={openModal}/>
+            <Button
+              content="Comienza ahora"
+              onClick={() => {
+                emailSubject("Este usuario quiere recuperar su tiempo");
+                openModal();
+              }}
+            />
           </div>
         </Container>
       </div>
