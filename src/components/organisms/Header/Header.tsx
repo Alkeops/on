@@ -5,6 +5,8 @@ import { useWindowScroll } from "@hooks";
 import { HamburguerButton } from "@atoms";
 import { NavBar } from "@molecules";
 import { Container } from "@templates";
+import Logo from "@assets/icons/logo_nubesk.svg";
+
 const Header = ({
   onClick,
   isOpen,
@@ -26,11 +28,12 @@ const Header = ({
       <Container className={`${prefix}__container`}>
         <Link href="/">
           <a style={{ fontSize: 30, marginRight: 18, width: 100 }}>
-            <img
+            <Logo className={`${prefix}__logo`}/>
+           {/*  <img
               src="/logo-dark.png"
               alt="logo"
               className={`${prefix}__image`}
-            />
+            /> */}
           </a>
         </Link>
         <HamburguerButton open={open} setOpen={setOpen} />

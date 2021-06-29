@@ -24,6 +24,22 @@
     transform: translate(-20px, 8%);
     @include xl(){
       width: 180px;
+      font-size: 50px;
     }
+  }
+  &__logo{
+    font-size: 30vw;
+    max-width: 130px;
+    @include sm(){
+      font-size: 18vw;
+    }
+    @include md(){
+      transform: translate(-20px, 8%);
+      position: relative;
+      font-size: 13vw;
+      top: 1px;
+    }
+    /* transform: translate(-20px, 8%); */
+    /* font-size: 7vw; */
   }
 }
