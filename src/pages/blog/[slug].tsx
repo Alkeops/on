@@ -18,20 +18,9 @@ const posts = ({ post, posts, preview }) => {
   return (
     <UserLayout>
       <Head>
-        <meta name="og:title" content="European Travel Destinations" />
-        <title>Otro titulo</title>
-        <meta
-          name="og:description"
-          content="Offering tour packages for individuals or groups."
-        />
-        <meta
-          name="og:image"
-          content="http://euro-travel-example.com/thumbnail.jpg"
-        />
-        <meta
-          name="og:url"
-          content="http://euro-travel-example.com/index.htm"
-        />
+        <meta name="og:title" content={postInfo?.title} />
+        <title>{postInfo?.title} </title>
+        <meta name="og:description" content={postInfo?.excerpt} />
       </Head>
       <img
         className={`${prefix}__image`}

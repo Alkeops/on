@@ -8,24 +8,8 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="description" content="Descripcion larga"></meta>
         <title>Nubesk</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
-        <meta name="og:title" content="European Travel Destinations" />
-        <meta
-          name="og:description"
-          content="Offering tour packages for individuals or groups."
-        />
-        <meta
-          name="og:image"
-          content="http://euro-travel-example.com/thumbnail.jpg"
-        />
-        <meta
-          name="og:url"
-          content="http://euro-travel-example.com/index.htm"
-        />
       </Head>
       <Header onClick={openModal} isOpen={contactModal} />
       {contactModal ? (
