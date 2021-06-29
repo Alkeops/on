@@ -5,8 +5,11 @@ import React, { useState, useEffect } from "react";
 import { BlogPost } from "@organisms";
 import { LastPostItem } from "@molecules";
 import { SocialNetworks } from "@atoms";
+import { useRouter } from "next/router";
 const posts = ({ post, posts, preview }) => {
   const [postInfo, setPostInfo] = useState<any>({});
+  const router = useRouter();
+  console.log(router);
   useEffect(() => {
     setPostInfo(post);
   }, [post]);
@@ -23,9 +26,24 @@ const posts = ({ post, posts, preview }) => {
         <div className={`${prefix}__share`}>
           <h3>Compartelo</h3>
           <div className={`${prefix}__share-items`}>
-            <SocialNetworks network="Facebook" href="/" isWhite />
-            <SocialNetworks network="Whatsapp" href="/" isWhite />
-            <SocialNetworks network="Twitter" href="/" isWhite  />
+            <SocialNetworks
+              network="Facebook"
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://on-ruddy.vercel.app${router.asPath}`}
+              target="_blank"
+              isWhite
+            />
+            <SocialNetworks
+              network="Whatsapp"
+              href={`https://wa.me/?text=https://on-ruddy.vercel.app${router.asPath}`}
+              target="_blank"
+              isWhite
+            />
+            <SocialNetworks
+              network="Twitter"
+              href={`https://twitter.com/intent/tweet?url=https://on-ruddy.vercel.app${router.asPath}`}
+              target="_blank"
+              isWhite
+            />
           </div>
         </div>
         <div className={`${prefix}__last-posts`}>
