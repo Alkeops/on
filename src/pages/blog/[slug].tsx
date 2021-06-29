@@ -18,9 +18,9 @@ const posts = ({ post, posts, preview }) => {
   return (
     <UserLayout>
       <Head>
-        <meta name="og:title" content={postInfo.title} />
+        <meta name="og:title" content={postInfo.title || "Un post interesante"} />
         <title>Nubesk no se detiene </title>
-        <meta name="og:description" content={postInfo.excerpt} />
+        <meta name="og:description" content={postInfo.excerpt || "Visto en Nubesk"} />
       </Head>
       <img
         className={`${prefix}__image`}
