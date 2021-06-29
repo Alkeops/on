@@ -11,6 +11,8 @@ const mailer = (req: NextApiRequest, res: NextApiResponse) => {
     },
     secure: true,
   });
+
+  
   let template: string = ``;
   Object.keys(req.body).forEach((key) => {
     template += `<span>${
