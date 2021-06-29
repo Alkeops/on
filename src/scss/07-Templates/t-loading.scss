@@ -1,0 +1,31 @@
+.t-loading {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background: $color-sexy-purple;
+  z-index: 99;
+  transition: 10s;
+  &.is-entry {
+    top: inherit;
+    bottom: 0;
+    animation: achica 2s forwards;
+    @keyframes achica {
+      100% {
+        height: 0;
+      }
+    }
+  }/* 
+  &.is-leave{
+      animation: agranda .3s forwards;
+      @keyframes agranda {
+          0%{
+              height: 0%;
+          }
+        100% {
+          height: 100%;
+        }
+      }
+  } */
+}
