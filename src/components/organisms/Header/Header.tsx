@@ -28,12 +28,12 @@ const Header = ({
       <Container className={`${prefix}__container`}>
         <Link href="/">
           <a style={{ fontSize: 30, marginRight: 18, width: 100 }}>
-            <Logo className={`${prefix}__logo`}/>
-           {/*  <img
+            {/* <Logo className={`${prefix}__logo`}/> */}
+            <img
               src="/logo-dark.png"
               alt="logo"
               className={`${prefix}__image`}
-            /> */}
+            />
           </a>
         </Link>
         <HamburguerButton open={open} setOpen={setOpen} />
