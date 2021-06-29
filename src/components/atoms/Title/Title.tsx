@@ -16,7 +16,7 @@ const Title = ({
     "is-home": isHome,
   });
   return (
-    <h1 data-aos={isWhite ? null : "fade-right"} className={classForComponent}>
+    <h1 data-aos={isWhite ? null : "fade-right"} data-aos-delay="300" className={classForComponent}>
       {children}
     </h1>
   );
