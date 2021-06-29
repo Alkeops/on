@@ -61,10 +61,11 @@
         max-height: 700px;
         margin-top: 30px;
         position: relative;
+        font-size: 100vw;
         top: 14px;
         @include sm() {
           margin-bottom: 0;
-          font-size: 100vw;
+          
           width: 54%;
           position: inherit;
           top: inherit;
