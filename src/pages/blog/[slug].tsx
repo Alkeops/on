@@ -6,10 +6,10 @@ import { BlogPost } from "@organisms";
 import { LastPostItem } from "@molecules";
 import { SocialNetworks } from "@atoms";
 import { useRouter } from "next/router";
+import Head from "next/head";
 const posts = ({ post, posts, preview }) => {
   const [postInfo, setPostInfo] = useState<any>({});
   const router = useRouter();
-  console.log(router);
   useEffect(() => {
     setPostInfo(post);
   }, [post]);
@@ -17,6 +17,22 @@ const posts = ({ post, posts, preview }) => {
   const prefix: string = "p-blog-post";
   return (
     <UserLayout>
+      <Head>
+        <meta name="og:title" content="European Travel Destinations" />
+        <title>Otro titulo</title>
+        <meta
+          name="og:description"
+          content="Offering tour packages for individuals or groups."
+        />
+        <meta
+          name="og:image"
+          content="http://euro-travel-example.com/thumbnail.jpg"
+        />
+        <meta
+          name="og:url"
+          content="http://euro-travel-example.com/index.htm"
+        />
+      </Head>
       <img
         className={`${prefix}__image`}
         src={postInfo?.featuredImage?.node?.sourceUrl}
