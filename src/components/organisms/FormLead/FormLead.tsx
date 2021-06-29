@@ -43,7 +43,6 @@ const FormLead = () => {
       ...form,
       [name]: value,
     });
-    console.log(form);
   };
   useEffect(() => {
     setDisable(true);
@@ -69,6 +68,7 @@ const FormLead = () => {
             required
             label="Correo Electronico corporativo"
             fullWidth
+            type="email"
             className={`${prefix}__input`}
             onChange={handleForm}
             name="email"
