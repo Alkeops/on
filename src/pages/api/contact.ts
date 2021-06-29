@@ -13,16 +13,27 @@ const mailer = (req: NextApiRequest, res: NextApiResponse) => {
   });
   let template: string = ``;
   Object.keys(req.body).forEach((key) => {
-    template += `<span style="color: #6d409c; margin: 30">${
-      key === "deDonde" ? "Donde se entero de Nubesk" : key
-    } : ${req.body[key]}</span></br>`;
+    template += `<span>${
+      key === "deDonde" ? "Donde se entero de Nubesk" : key.toUpperCase()
+    } :&nbsp;&nbsp; ${req.body[key]}</span></br>`;
   });
+  let styles = `
+    .main-template{
+        padding: 50px;
+    }
+    .main-template span {
+        color: #6d409c;
+        display: block;
+        font-size: 30px;
+        padding: 0px 30px;
+    }
+  `
   const mailData = {
-    from: process.env.EMAIL,
+    from: `Nubesk Website ${process.env.EMAIL}`,
     to: process.env.EMAIL_RECEIVE,
     subject: `${req.body.subject || "Alguien quiere que lo contactes"}`,
     text: `${req.body.subject || "Alguien quiere que lo contactes"}`,
-    html: `<div>${template}</div>`,
+    html: `<style>${styles}</style><div class="main-template">${template}</div>`,
   };
   transporter.sendMail(mailData, function (err, info) {
     if (err) console.log(err);
