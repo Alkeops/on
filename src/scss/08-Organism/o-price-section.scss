@@ -19,7 +19,7 @@
     }
     .a-btn {
       width: 100%;
-      margin-bottom: 20px;
+      margin: 25px 0;
       @include sm() {
         width: initial;
         margin-top: 20px;
@@ -29,6 +29,7 @@
       }
     }
     &-group {
+      margin-top: 25px;
       font-size: 17vw;
     }
   }
