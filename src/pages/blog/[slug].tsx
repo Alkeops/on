@@ -17,11 +17,11 @@ const posts = ({ post, posts, preview }) => {
   const prefix: string = "p-blog-post";
   return (
     <UserLayout>
-      <Head>
+      {/* <Head> Insert Aqui SEO POSTS
         <meta name="og:title" content={"Un post interesante"} />
         <title>{postInfo?.title}</title>
         <meta name="og:description" content={"Visto en Nubesk"} />
-      </Head>
+      </Head> */}
       <img
         className={`${prefix}__image`}
         src={postInfo?.featuredImage?.node?.sourceUrl}

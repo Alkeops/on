@@ -8,8 +8,17 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Head>
-        <title>Nubesk</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <link rel="icon" href="/assets/img/favicon.png" />
+  <meta property="og:title" content="Nubesk"/>
+  <meta property="og:description"
+    content="Una herramienta para organizar, adaptar, renombrar y compartir fotos de tus productos"/>
+  <meta property="og:image" content="/assets/img/img.png"/>
+  <meta property="og:url" content="https://www.nubesk.com.mx"/>
+  <meta name="twitter:card" content="/assets/img/img.png"/>
+  <title>Nubesk</title>
       </Head>
       <Header onClick={openModal} isOpen={contactModal} />
       {contactModal ? (
