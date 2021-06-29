@@ -1,5 +1,6 @@
 import { UserLayout, Container, FlexContainer } from "@templates";
 import { MainSection, Benefits } from "@organisms";
+
 export default function Home() {
   return (
     <UserLayout>

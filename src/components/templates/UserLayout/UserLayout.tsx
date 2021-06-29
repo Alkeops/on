@@ -19,6 +19,7 @@ const UserLayout = ({ children }: { children: ReactNode }) => {
   <meta property="og:url" content="https://www.nubesk.com.mx"/>
   <meta name="twitter:card" content="/assets/img/img.png"/>
   <title>Nubesk</title>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
       <Header onClick={openModal} isOpen={contactModal} />
       {contactModal ? (

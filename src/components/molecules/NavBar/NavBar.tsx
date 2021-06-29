@@ -1,5 +1,6 @@
 import { Button, NavItem } from "@atoms";
 import classNames from "classnames";
+import { useRouter } from "next/router";
 import { MouseEventHandler } from "react";
 
 const NavBar = ({
@@ -9,6 +10,7 @@ const NavBar = ({
   open: boolean;
   onClick: MouseEventHandler;
 }) => {
+  const router = useRouter();
   const prefix: string = "m-nav-bar";
   const classForComponent: string = classNames(`${prefix}`, {
     "is-open": open,
@@ -21,7 +23,7 @@ const NavBar = ({
         <NavItem href="/blog" content="Blog" />
         <button onClick={onClick}>Contacto</button>
       </div>
-      <Button content="Agenda tu Demo" />
+      <Button content="Agenda tu Demo" onClick={() => router.push('/agenda')} />
     </nav>
   );
 };
