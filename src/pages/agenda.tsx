@@ -1,18 +1,10 @@
 import { UserLayout } from "@templates";
 import React, { useEffect } from "react";
-
+import { InlineWidget } from "react-calendly";
 const agenda = () => {
-  useEffect(() => {
-    Calendly.initInlineWidget({
-      url: "https://calendly.com/jprida/nubesk",
-      parentElement: document.getElementById("calendy"),
-      prefill: {},
-      utm: {},
-    });
-  }, []);
   return (
     <UserLayout>
-      <div id="calendy" className="t-agenda"></div>
+      <InlineWidget url="https://calendly.com/jprida/nubesk" />
     </UserLayout>
   );
 };
