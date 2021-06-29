@@ -11,15 +11,15 @@ const Footer = () => {
         <div className={`${prefix}__contacto`}>
           <Title>¿Quieres contratar Nubesk</Title>
           <Paragraph>
-            Estamos para atenderte a través de estos medios todos los días
-            del año
+            Estamos para atenderte a través de estos medios todos los días del
+            año
           </Paragraph>
           <div className={`${prefix}__contacto-options`}>
             <FooterContact
               icon="MailIcon"
               textButton="Enviar correo"
               p="Correo electrónico"
-              href="mailto:correo@correo.com"
+              href="mailto:hola@nubesk.com.mx"
             />
             <FooterContact
               icon="Whatsapp"
@@ -38,7 +38,10 @@ const Footer = () => {
               <div className={`${prefix}__contacto-network-options`}>
                 <SocialNetworks href="/" network="Facebook" />
                 <SocialNetworks href="/" network="Twitter" />
-                <SocialNetworks href="/" network="Linkedin" />
+                <SocialNetworks
+                  href="https://www.linkedin.com/company/nubesk"
+                  network="Linkedin"
+                />
                 <SocialNetworks href="/" network="Youtube" />
                 <SocialNetworks href="/" network="Instagram" />
               </div>
@@ -48,7 +51,8 @@ const Footer = () => {
         <div className={`${prefix}__input`}>
           <BlockTitle title="Suscribete a nuestro newsletter">
             <p className={`${prefix}__input-p`}>
-            Recibe las mejores noticias de e-commerce, marketing, fotografía y tecnología directo en tu correo.
+              Recibe las mejores noticias de e-commerce, marketing, fotografía y
+              tecnología directo en tu correo.
             </p>
           </BlockTitle>
           <InputSubscribe />
@@ -62,7 +66,7 @@ const Footer = () => {
               <NavItem content="Blog" href="/blog" isFooter />
             </div>
           </BlockTitle>
-         {/*  <BlockTitle title="Compañia">
+          {/*  <BlockTitle title="Compañia">
             <div className={`${prefix}__navegation-links`}>
               <NavItem content="¿Quiénes somos?" href="/" isFooter />
               <NavItem content="Prensa" href="/" isFooter />
@@ -96,8 +100,6 @@ const Footer = () => {
               <NavItem content="Afiliados" href="/" isFooter />
             </div>
           </BlockTitle> */}
-          
-         
         </div>{" "}
         <h5 className={`${prefix}__copy`}>
           ©2021 Nubesk Todos los derechos reservados
