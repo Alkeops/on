@@ -1,0 +1,8 @@
+.t-agenda{
+    @include md(){
+        height: 800px;
+        padding-bottom: 50px;
+    }
+    .calendly-inline-widget{
+    height: 100% !important;
+} }
