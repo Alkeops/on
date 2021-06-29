@@ -18,14 +18,24 @@ const mailer = (req: NextApiRequest, res: NextApiResponse) => {
     } :&nbsp;&nbsp; ${req.body[key]}</span></br>`;
   });
   let styles = `
+    
     .main-template{
-        padding: 50px;
+        padding: 10px;
     }
     .main-template span {
         color: #6d409c;
         display: block;
-        font-size: 30px;
-        padding: 0px 30px;
+        font-size: 18px;
+        padding: 0px 18px;
+    }
+    @media (min-width: 768px) {
+        .main-template{
+            padding: 50px;
+        }
+        .main-template span {
+            font-size: 30px;
+            padding: 0px 30px;
+        }
     }
   `
   const mailData = {
