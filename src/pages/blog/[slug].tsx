@@ -5,11 +5,11 @@ import React, { useState, useEffect } from "react";
 import { BlogPost } from "@organisms";
 import { LastPostItem } from "@molecules";
 import { SocialNetworks } from "@atoms";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
 import Head from "next/head";
 const posts = ({ post, posts, preview }) => {
   const [postInfo, setPostInfo] = useState<any>({});
-  const router = useRouter();
+  const router : NextRouter = useRouter();
   useEffect(() => {
     setPostInfo(post);
   }, [post]);
@@ -18,9 +18,6 @@ const posts = ({ post, posts, preview }) => {
   return (
     <UserLayout>
       {/* <Head> Insert Aqui SEO POSTS
-        <meta name="og:title" content={"Un post interesante"} />
-        <title>{postInfo?.title}</title>
-        <meta name="og:description" content={"Visto en Nubesk"} />
       </Head> */}
       <img
         className={`${prefix}__image`}

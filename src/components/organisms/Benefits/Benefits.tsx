@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Paragraph, Title } from "@atoms";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
 import { Container } from "@templates";
 import Manual from "@assets/illustrations/manual.svg";
 import Formatos from "@assets/illustrations/formatos.svg";
 import Licencias from "@assets/illustrations/licencias.svg";
 import Magia from "@assets/illustrations/magia.svg";
 const Benefits = () => {
-  const router = useRouter();
+  const router: NextRouter = useRouter();
   const prefix: string = "o-benefits";
   const handleRouter = () => router.push("/producto");
   return (

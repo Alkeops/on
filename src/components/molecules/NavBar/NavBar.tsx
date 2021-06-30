@@ -1,6 +1,6 @@
 import { Button, NavItem } from "@atoms";
 import classNames from "classnames";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
 import { MouseEventHandler } from "react";
 
 const NavBar = ({
@@ -10,7 +10,7 @@ const NavBar = ({
   open: boolean;
   onClick: MouseEventHandler;
 }) => {
-  const router = useRouter();
+  const router: NextRouter = useRouter();
   const prefix: string = "m-nav-bar";
   const classForComponent: string = classNames(`${prefix}`, {
     "is-open": open,
